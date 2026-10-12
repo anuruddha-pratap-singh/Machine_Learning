@@ -1,0 +1,451 @@
+bike_id,brand,age_months,km_driven,owner_count,condition,mileage_kmpl,service_count,insurance,price_thousand,sold_in_week
+B4543,TVS,25,14455.0,3,Excellent,40.6,,Yes,41.6,No
+B4392,TVS,43,26304.0,2,Good,51.2,1.0,Yes,24.1,No
+B4235,Honda,38,6421.0,1,Good,65.0,,No,48.2,No
+B4319,Hero,14,6531.0,1,Good,,,Yes,58.7,No
+B4284,TVS,115,80000.0,1,Good,61.8,0.0,No,12.0,Yes
+B4533,Royal Enfield,5,5524.0,1,Good,46.9,2.0,No,153.7,No
+B4412,Hero,44,22686.0,1,Fair,,1.0,No,26.4,No
+B4357,Yamaha,79,52795.0,3,Excellent,45.0,,Yes,12.0,Yes
+B4376,Hero,89,78402.0,1,Excellent,35.8,0.0,Yes,12.0,No
+B4429,TVS,24,19605.0,1,Good,72.0,4.0,Yes,54.8,No
+B4394,Royal Enfield,66,49224.0,1,Good,50.9,3.0,No,38.3,Yes
+B4307,Honda,116,77996.0,1,Excellent,62.2,3.0,Yes,12.0,Yes
+B4310,Honda,109,80000.0,1,Good,46.6,,No,12.0,Yes
+B4431,Honda,95,59381.0,3,Fair,42.3,5.0,Yes,12.0,No
+B4289,Honda,40,13414.0,1,Good,47.8,1.0,Yes,48.4,No
+B4534,Honda,107,44412.0,1,Good,52.9,3.0,No,12.0,Yes
+B4356,Honda,70,55706.0,3,Good,39.1,1.0,No,12.0,Yes
+B4139,Honda,49,31115.0,1,Good,59.1,1.0,Yes,44.2,No
+B4262,Yamaha,65,31328.0,1,Good,34.5,3.0,No,20.2,No
+B4538,Hero,7,4088.0,3,Fair,56.4,3.0,Yes,34.1,No
+B4297,Yamaha,33,14348.0,1,Excellent,52.9,1.0,No,67.0,No
+B4537,Hero,44,29517.0,2,Excellent,45.3,3.0,Yes,39.1,No
+B4489,TVS,62,27219.0,2,Fair,56.3,5.0,No,12.0,No
+B4409,Bajaj,98,60393.0,2,Good,59.6,2.0,Yes,12.0,No
+B4362,Yamaha,106,80000.0,1,Good,60.1,3.0,No,12.0,Yes
+B4494,Honda,11,5908.0,1,Fair,55.4,0.0,Yes,67.9,No
+B4104,Hero,97,53706.0,2,Excellent,49.4,,Yes,12.0,Yes
+B4456,TVS,34,25302.0,1,Fair,60.9,,Yes,21.7,No
+B4317,TVS,89,62179.0,1,Fair,54.4,3.0,No,12.0,No
+B4386,Honda,92,51743.0,1,Good,47.3,1.0,Yes,12.0,Yes
+B4504,Yamaha,77,56844.0,1,Good,41.4,4.0,Yes,15.3,No
+B4424,Yamaha,44,21474.0,3,Excellent,48.9,0.0,Yes,33.7,Yes
+B4396,TVS,78,51912.0,1,Good,47.4,3.0,No,12.0,Yes
+B4358,Bajaj,89,30116.0,1,Excellent,62.5,3.0,No,17.4,Yes
+B4469,Bajaj,5,4504.0,1,Fair,46.3,3.0,No,62.8,No
+B4311,Hero,72,54943.0,2,Good,43.1,1.0,No,12.0,Yes
+B4536,Honda,66,45267.0,2,Fair,52.3,1.0,No,12.0,No
+B4157,TVS,107,70084.0,2,Good,46.7,4.0,Yes,12.0,Yes
+B4237,Honda,102,80000.0,2,Fair,52.8,3.0,Yes,12.0,No
+B4120,Hero,88,75217.0,2,Excellent,58.5,1.0,Yes,12.0,Yes
+B4328,Royal Enfield,16,11870.0,1,Fair,62.6,,Yes,130.0,No
+B4475,Honda,114,68384.0,1,Fair,45.1,,No,12.0,No
+B4160,TVS,36,16088.0,1,Good,55.1,3.0,Yes,37.7,No
+B4280,Honda,29,20600.0,2,Good,37.7,4.0,No,34.1,No
+B4385,TVS,80,46722.0,1,Fair,51.3,3.0,No,12.0,No
+B4170,Bajaj,6,4773.0,1,Excellent,60.7,2.0,Yes,79.2,No
+B4298,Hero,22,11985.0,1,Good,46.9,3.0,Yes,47.1,No
+B4236,Honda,8,4088.0,1,Fair,51.8,2.0,No,73.4,No
+B4301,Honda,63,22382.0,1,Excellent,35.9,5.0,Yes,32.6,Yes
+B4314,Yamaha,98,80000.0,1,Good,46.4,1.0,Yes,12.0,Yes
+B4425,Yamaha,3,2388.0,2,Good,37.9,3.0,Yes,85.8,No
+B4243,TVS,67,47463.0,1,Good,34.6,3.0,Yes,26.7,No
+B4515,Yamaha,74,38264.0,1,Good,,2.0,Yes,28.7,No
+B4510,Honda,91,56191.0,1,Good,42.8,5.0,No,12.0,Yes
+B4503,Bajaj,65,50850.0,1,Excellent,41.9,3.0,Yes,22.6,Yes
+B4201,TVS,70,41944.0,3,Excellent,37.6,5.0,Yes,12.0,Yes
+B4417,Bajaj,70,32904.0,1,Fair,,,No,12.0,Yes
+B4274,Hero,110,64601.0,1,Excellent,59.1,1.0,Yes,12.0,Yes
+B4501,Bajaj,55,8304.0,3,Good,43.3,2.0,Yes,18.7,Yes
+B4296,Hero,45,26225.0,2,Good,31.1,4.0,No,12.0,No
+B4258,Yamaha,77,15961.0,1,Good,37.6,5.0,No,23.0,Yes
+B4304,Honda,98,56562.0,2,Excellent,43.5,,Yes,12.0,Yes
+B4351,Hero,73,44638.0,3,Fair,43.7,0.0,Yes,12.0,No
+B4153,TVS,53,38624.0,1,Fair,37.3,1.0,No,12.0,Yes
+B4107,Honda,11,9685.0,1,Good,47.8,,Yes,72.9,No
+B4290,Hero,74,67706.0,2,Excellent,60.6,2.0,Yes,12.0,Yes
+B4397,Bajaj,40,22109.0,1,Good,37.5,4.0,No,42.4,No
+B4487,Bajaj,42,23704.0,1,Good,57.5,1.0,No,32.4,No
+B4447,Hero,59,39347.0,1,Fair,51.9,4.0,No,12.0,No
+B4121,Hero,75,45917.0,1,Fair,45.0,2.0,Yes,12.0,No
+B4114,Honda,30,16542.0,3,Fair,39.5,3.0,Yes,23.1,No
+B4377,Bajaj,99,75449.0,2,Fair,55.8,0.0,No,12.0,No
+B4156,Hero,12,7480.0,1,Fair,50.5,3.0,No,50.8,No
+B4506,Honda,45,17899.0,1,Excellent,45.5,3.0,Yes,46.6,Yes
+B4465,Hero,96,49240.0,3,Excellent,59.1,1.0,Yes,12.0,Yes
+B4499,Royal Enfield,25,5779.0,1,Good,44.1,3.0,Yes,111.0,No
+B4495,Royal Enfield,62,38138.0,1,Excellent,24.1,3.0,Yes,68.2,Yes
+B4174,Yamaha,18,8587.0,2,Fair,31.6,,Yes,59.7,No
+B4131,Yamaha,57,33120.0,2,Good,53.2,0.0,No,12.0,Yes
+B4379,Honda,87,51198.0,2,Excellent,33.0,,Yes,12.0,Yes
+B4371,Hero,29,9467.0,2,Excellent,44.7,3.0,Yes,55.0,No
+B4204,Bajaj,108,80000.0,1,Excellent,47.4,3.0,Yes,12.0,Yes
+B4299,Hero,40,21740.0,1,Excellent,38.7,0.0,Yes,29.4,Yes
+B4493,Royal Enfield,5,4125.0,1,Excellent,39.8,1.0,Yes,172.3,No
+B4402,TVS,89,75908.0,3,Good,29.9,4.0,Yes,12.0,Yes
+B4187,TVS,43,20782.0,1,Fair,41.8,2.0,No,23.8,No
+B4420,TVS,72,32742.0,1,Excellent,33.2,,Yes,31.3,Yes
+B4253,Royal Enfield,44,25018.0,2,Good,,,Yes,75.5,Yes
+B4302,Hero,29,26755.0,1,Good,43.8,2.0,Yes,37.4,No
+B4300,Bajaj,91,46270.0,3,Good,50.4,,Yes,12.0,Yes
+B4436,TVS,119,56825.0,1,Fair,44.7,,Yes,12.0,Yes
+B4540,Honda,113,65016.0,1,Good,36.1,1.0,Yes,12.0,Yes
+B4250,Bajaj,53,14252.0,1,Good,49.8,2.0,No,32.0,No
+B4213,Bajaj,80,71937.0,1,Good,44.9,,Yes,12.0,Yes
+B4337,Bajaj,26,21483.0,1,Fair,52.6,3.0,Yes,40.7,No
+B4183,Yamaha,40,28544.0,1,Good,41.8,1.0,Yes,43.6,No
+B4522,TVS,59,36153.0,2,Fair,44.0,3.0,Yes,12.0,No
+B4270,Bajaj,59,38355.0,3,Good,46.6,3.0,Yes,12.0,No
+B4217,Royal Enfield,93,63861.0,2,Fair,51.2,1.0,No,12.0,Yes
+B4161,TVS,80,,2,Excellent,61.4,3.0,No,12.0,No
+B4303,Royal Enfield,66,44668.0,2,Good,40.8,2.0,Yes,49.7,Yes
+B4154,Royal Enfield,72,57056.0,2,Good,54.0,,Yes,25.5,Yes
+B4458,Royal Enfield,5,2887.0,1,Good,54.9,1.0,Yes,157.1,No
+B4155,Yamaha,27,12820.0,1,Excellent,47.8,3.0,Yes,73.1,No
+B4524,TVS,94,32482.0,2,Excellent,61.1,2.0,No,12.0,Yes
+B4455,Honda,62,32626.0,1,Fair,69.7,2.0,No,21.7,No
+B4141,Honda,112,80000.0,1,Fair,60.8,2.0,Yes,12.0,No
+B4265,Honda,96,45863.0,1,Good,38.7,3.0,Yes,12.0,Yes
+B4116,Bajaj,68,50836.0,2,Excellent,,5.0,No,12.0,Yes
+B4221,Bajaj,100,64283.0,1,Good,58.4,0.0,No,12.0,Yes
+B4318,Honda,88,44368.0,1,Excellent,,,Yes,12.0,Yes
+B4340,Royal Enfield,85,,1,Good,53.1,3.0,Yes,47.5,Yes
+B4370,Royal Enfield,14,7284.0,1,Good,27.9,5.0,No,134.6,No
+B4390,Honda,73,38578.0,1,Fair,45.0,4.0,Yes,12.0,No
+B4440,Bajaj,99,26311.0,1,Excellent,44.4,3.0,No,15.3,Yes
+B4526,TVS,8,4869.0,1,Good,41.2,1.0,No,73.7,No
+B4332,TVS,27,15752.0,1,Good,43.5,,Yes,50.5,No
+B4188,Bajaj,89,78029.0,1,Good,60.7,3.0,Yes,12.0,Yes
+B4398,TVS,34,26632.0,1,Good,37.9,3.0,Yes,32.1,No
+B4464,TVS,9,3592.0,1,Good,53.1,,Yes,79.7,No
+B4229,Hero,95,47485.0,1,Good,63.0,1.0,No,12.0,Yes
+B4239,Yamaha,66,42399.0,3,Fair,44.0,3.0,Yes,12.0,Yes
+B4255,Honda,45,23510.0,1,Good,46.9,1.0,Yes,43.1,No
+B4405,Honda,66,39163.0,2,Excellent,49.7,2.0,No,20.2,Yes
+B4269,Hero,18,12189.0,2,Good,57.9,0.0,Yes,41.5,No
+B4126,Honda,101,75052.0,2,Good,48.1,3.0,Yes,12.0,Yes
+B4144,Honda,67,44127.0,1,Fair,34.5,,No,12.0,Yes
+B4149,TVS,53,25357.0,1,Fair,,0.0,No,16.8,No
+B4224,Honda,20,15591.0,1,Fair,54.9,5.0,Yes,60.8,No
+B4547,Bajaj,95,50679.0,2,Good,52.2,2.0,Yes,12.0,Yes
+B4111,Bajaj,17,11188.0,1,Good,42.9,2.0,No,54.8,No
+B4244,Hero,80,64228.0,1,Excellent,54.7,3.0,No,12.0,Yes
+B4316,TVS,37,25691.0,3,Fair,36.9,2.0,Yes,25.7,No
+B4513,Hero,71,51107.0,3,Fair,,0.0,Yes,12.0,No
+B4112,Hero,23,9740.0,1,Good,44.6,2.0,No,47.8,No
+B4288,Honda,79,39176.0,1,Good,66.4,4.0,Yes,12.0,Yes
+B4548,TVS,84,27344.0,2,Excellent,38.7,1.0,Yes,17.2,Yes
+B4202,Bajaj,16,13231.0,1,Fair,50.7,3.0,Yes,55.2,No
+B4333,TVS,14,8408.0,1,Good,,3.0,No,67.0,No
+B4338,Bajaj,18,14374.0,3,Excellent,57.6,1.0,No,49.8,Yes
+B4334,Hero,21,12931.0,2,Fair,55.0,0.0,Yes,37.9,No
+B4128,TVS,5,3676.0,1,Fair,42.6,,Yes,70.2,No
+B4246,TVS,10,5885.0,3,Good,45.5,3.0,Yes,50.1,No
+B4206,Yamaha,100,62147.0,1,Excellent,49.4,2.0,No,16.7,Yes
+B4419,TVS,7,3514.0,2,Excellent,56.1,2.0,Yes,81.0,No
+B4295,Bajaj,66,24589.0,1,Good,61.2,2.0,No,15.0,No
+B4545,Yamaha,30,16692.0,1,Good,30.3,3.0,Yes,62.8,No
+B4330,Honda,86,60723.0,1,Good,57.0,1.0,Yes,12.0,Yes
+B4182,TVS,45,15534.0,1,Excellent,44.9,3.0,No,50.1,No
+B4152,Royal Enfield,77,47955.0,1,Excellent,50.9,2.0,Yes,41.5,Yes
+B4234,Honda,61,39916.0,2,Fair,43.3,,Yes,12.0,No
+B4230,Royal Enfield,54,27008.0,3,Good,41.3,3.0,Yes,43.1,Yes
+B4279,Honda,28,19654.0,1,Excellent,35.2,1.0,Yes,63.7,Yes
+B4198,Yamaha,70,37759.0,1,Fair,32.9,2.0,Yes,12.0,Yes
+B4368,Honda,59,32039.0,2,Good,40.2,5.0,No,12.2,Yes
+B4492,Yamaha,58,25189.0,2,Fair,33.0,5.0,Yes,19.9,No
+B4343,Bajaj,91,68795.0,3,Fair,38.1,,Yes,12.0,No
+B4273,Bajaj,29,22339.0,1,Excellent,61.2,4.0,No,49.9,No
+B4350,Honda,39,21067.0,1,Excellent,48.0,3.0,Yes,55.6,Yes
+B4359,TVS,87,68015.0,3,Fair,57.5,,No,12.0,No
+B4205,Hero,48,40098.0,1,Excellent,,1.0,No,30.3,No
+B4378,TVS,103,58643.0,3,Good,,3.0,Yes,12.0,Yes
+B4321,Royal Enfield,73,38433.0,1,Excellent,59.7,1.0,Yes,55.8,Yes
+B4410,Royal Enfield,103,62570.0,1,Good,42.1,4.0,No,12.0,Yes
+B4203,Hero,60,39607.0,1,Excellent,49.2,1.0,No,14.0,Yes
+B4481,TVS,15,8384.0,1,Fair,41.4,5.0,Yes,51.2,No
+B4177,Hero,36,23786.0,1,Good,41.7,,No,30.6,No
+B4108,Yamaha,98,58808.0,2,Good,68.5,3.0,Yes,12.0,Yes
+B4102,Hero,43,11485.0,3,Fair,35.8,4.0,Yes,21.3,No
+B4391,Royal Enfield,58,46540.0,1,Fair,45.3,5.0,Yes,50.8,Yes
+B4275,TVS,33,23184.0,1,Excellent,52.2,5.0,Yes,42.7,Yes
+B4320,Bajaj,21,11608.0,1,Excellent,56.0,3.0,No,62.0,No
+B4125,TVS,23,,3,Fair,37.1,1.0,Yes,30.7,No
+B4454,Honda,65,54865.0,2,Fair,48.4,,Yes,12.0,No
+B4507,Royal Enfield,116,56742.0,1,Excellent,64.9,4.0,No,15.7,Yes
+B4407,Bajaj,89,4421.0,1,Excellent,49.9,,No,24.9,Yes
+B4150,Hero,19,13159.0,2,Fair,59.8,,No,38.5,No
+B4185,Honda,66,38831.0,1,Good,48.4,,Yes,14.6,Yes
+B4259,Honda,114,58663.0,1,Excellent,33.1,1.0,Yes,12.0,Yes
+B4264,Honda,30,14034.0,1,Good,30.1,3.0,No,50.2,Yes
+B4471,TVS,21,10135.0,2,Excellent,,2.0,Yes,61.7,No
+B4122,Bajaj,40,25401.0,2,Fair,58.8,3.0,No,17.0,No
+B4162,Royal Enfield,69,39200.0,3,Fair,43.0,2.0,Yes,20.5,Yes
+B4498,Bajaj,70,50953.0,1,Good,42.8,,Yes,12.0,Yes
+B4199,Honda,115,80000.0,1,Good,32.5,1.0,No,12.0,Yes
+B4169,Bajaj,60,31834.0,3,Good,28.7,3.0,Yes,12.0,No
+B4444,Royal Enfield,55,39360.0,1,Excellent,51.7,1.0,Yes,80.6,Yes
+B4286,Yamaha,56,53007.0,2,Good,,2.0,No,12.0,Yes
+B4282,TVS,107,80000.0,3,Good,44.1,0.0,No,12.0,No
+B4467,Honda,34,17438.0,2,Excellent,43.4,5.0,No,42.7,Yes
+B4305,Bajaj,4,3056.0,2,Good,,1.0,Yes,71.0,No
+B4312,Royal Enfield,64,41659.0,1,Excellent,63.8,3.0,Yes,60.5,Yes
+B4372,Yamaha,52,25535.0,1,Excellent,44.2,3.0,No,51.8,Yes
+B4195,TVS,7,3349.0,1,Good,56.6,2.0,No,66.6,No
+B4251,Yamaha,53,21932.0,1,Excellent,54.3,5.0,Yes,52.1,Yes
+B4389,Royal Enfield,46,25186.0,1,Good,57.0,3.0,No,73.8,Yes
+B4418,Bajaj,90,71215.0,1,Fair,48.1,,No,12.0,Yes
+B4129,Hero,117,41857.0,1,Good,43.7,3.0,No,12.0,No
+B4366,TVS,120,74006.0,1,Good,58.1,2.0,Yes,12.0,Yes
+B4413,TVS,80,32758.0,1,Fair,38.1,3.0,No,12.0,Yes
+B4541,TVS,22,8975.0,2,Fair,22.0,2.0,No,41.6,No
+B4511,Bajaj,76,51617.0,1,Fair,42.7,4.0,No,12.0,No
+B4329,Royal Enfield,106,54479.0,1,Excellent,49.7,3.0,No,26.3,Yes
+B4347,Hero,120,52581.0,3,Fair,50.8,2.0,No,12.0,No
+B4518,Yamaha,39,17118.0,2,Good,43.1,0.0,Yes,36.0,No
+B4216,Bajaj,88,53683.0,1,Good,57.1,1.0,Yes,12.0,Yes
+B4186,Hero,5,4096.0,1,Good,57.8,1.0,No,58.0,No
+B4529,Honda,82,47075.0,1,Excellent,51.8,0.0,No,12.0,Yes
+B4423,Honda,115,,1,Good,,4.0,No,12.0,No
+B4223,Royal Enfield,24,13055.0,1,Good,44.9,1.0,Yes,121.4,No
+B4146,Yamaha,22,13261.0,1,Excellent,51.5,4.0,Yes,75.2,No
+B4103,Hero,65,56192.0,2,Fair,50.0,,Yes,12.0,No
+B4212,Bajaj,42,28741.0,1,Good,,4.0,No,35.9,No
+B4283,Honda,103,54860.0,1,Excellent,37.4,2.0,Yes,12.0,Yes
+B4130,Royal Enfield,5,2268.0,1,Good,46.1,4.0,No,154.4,No
+B4254,Honda,67,44339.0,1,Good,32.9,0.0,Yes,16.2,Yes
+B4404,Yamaha,36,31721.0,1,Good,52.2,,No,34.6,No
+B4194,TVS,12,7694.0,3,Excellent,44.0,,Yes,76.9,No
+B4497,Bajaj,89,45058.0,1,Excellent,57.5,1.0,Yes,12.0,Yes
+B4549,Royal Enfield,94,55411.0,2,Good,51.7,4.0,Yes,13.0,Yes
+B4151,Bajaj,35,12773.0,1,Fair,42.0,4.0,Yes,38.6,No
+B4136,TVS,88,50271.0,1,Fair,58.6,5.0,No,12.0,No
+B4197,Bajaj,21,9582.0,1,Excellent,34.5,3.0,No,59.0,No
+B4339,Royal Enfield,36,26883.0,1,Excellent,46.6,0.0,No,97.3,Yes
+B4113,Bajaj,49,31753.0,1,Excellent,53.3,,No,39.7,Yes
+B4263,Hero,17,4603.0,2,Good,52.7,,Yes,48.6,No
+B4158,TVS,53,48440.0,1,Fair,45.7,4.0,Yes,12.0,No
+B4163,Hero,48,12514.0,1,Good,53.0,2.0,Yes,27.7,No
+B4468,Honda,102,80000.0,1,Excellent,48.9,4.0,Yes,12.0,Yes
+B4374,Bajaj,48,37349.0,1,Good,59.7,0.0,Yes,12.0,No
+B4416,Honda,23,15268.0,1,Good,44.0,2.0,Yes,59.1,No
+B4388,TVS,46,12399.0,2,Good,65.0,,No,32.2,No
+B4514,TVS,18,11925.0,2,Fair,37.1,3.0,No,26.8,No
+B4384,Hero,90,26953.0,1,Excellent,46.1,,Yes,18.0,No
+B4441,Royal Enfield,57,27260.0,2,Good,48.6,,Yes,53.4,Yes
+B4109,Honda,95,20568.0,1,Fair,50.1,0.0,Yes,12.0,Yes
+B4365,Hero,54,52439.0,1,Excellent,47.4,5.0,Yes,25.8,Yes
+B4228,Yamaha,101,69843.0,2,Excellent,58.2,2.0,Yes,12.0,Yes
+B4445,TVS,64,42800.0,1,Good,49.7,0.0,Yes,16.3,Yes
+B4178,TVS,77,45557.0,2,Fair,55.8,2.0,Yes,12.0,Yes
+B4145,TVS,44,15559.0,1,Excellent,68.6,2.0,Yes,49.5,No
+B4215,Bajaj,59,29367.0,1,Good,61.7,1.0,No,23.6,Yes
+B4523,Hero,87,63099.0,2,Excellent,47.6,1.0,Yes,12.0,Yes
+B4466,Honda,49,21956.0,2,Good,37.6,3.0,Yes,30.9,Yes
+B4257,Honda,47,37499.0,1,Fair,60.9,1.0,Yes,19.1,No
+B4124,Hero,71,50264.0,1,Good,35.5,,No,12.0,No
+B4381,Hero,21,9701.0,3,Excellent,57.3,3.0,No,43.2,No
+B4532,Yamaha,76,31108.0,2,Good,49.6,3.0,No,12.0,Yes
+B4355,Hero,101,55031.0,1,Good,35.2,2.0,Yes,12.0,Yes
+B4367,Hero,13,7859.0,2,Excellent,62.3,2.0,Yes,58.5,No
+B4226,TVS,115,80000.0,1,Excellent,46.3,1.0,Yes,12.0,Yes
+B4474,Hero,25,20825.0,1,Fair,36.3,0.0,Yes,41.1,No
+B4472,Honda,17,6802.0,1,Fair,51.8,4.0,Yes,62.2,No
+B4479,Honda,92,66642.0,1,Fair,43.8,0.0,Yes,12.0,No
+B4335,Honda,15,13132.0,1,Excellent,34.1,2.0,Yes,81.2,No
+B4133,Bajaj,41,17127.0,1,Good,43.2,5.0,Yes,36.6,Yes
+B4411,Yamaha,16,11845.0,2,Good,27.8,4.0,No,58.3,No
+B4382,TVS,87,54014.0,1,Excellent,46.4,,Yes,18.1,Yes
+B4222,Honda,52,36639.0,2,Good,52.1,1.0,No,14.0,Yes
+B4166,Bajaj,26,17310.0,2,Fair,34.3,2.0,No,36.7,No
+B4294,Hero,113,77039.0,1,Fair,61.0,4.0,No,12.0,No
+B4277,Honda,4,475.0,1,Good,43.3,2.0,No,82.1,No
+B4306,Hero,5,,2,Fair,38.9,3.0,Yes,46.5,No
+B4227,Yamaha,22,,3,Fair,44.8,3.0,Yes,42.8,No
+B4408,Bajaj,76,25036.0,1,Good,51.3,1.0,Yes,17.6,Yes
+B4477,Hero,120,44608.0,1,Good,52.2,0.0,No,12.0,No
+B4399,Yamaha,52,19078.0,1,Fair,62.8,1.0,Yes,27.9,No
+B4100,Hero,112,70554.0,1,Fair,53.8,0.0,Yes,12.0,No
+B4326,Yamaha,55,39893.0,3,Excellent,35.2,1.0,No,26.7,Yes
+B4502,Honda,119,68651.0,1,Good,,,Yes,12.0,Yes
+B4496,TVS,70,50873.0,1,Good,52.4,0.0,Yes,12.0,Yes
+B4349,Bajaj,22,14135.0,2,Excellent,54.2,1.0,Yes,63.4,No
+B4208,Honda,34,13937.0,3,Fair,45.1,1.0,No,23.0,No
+B4293,Hero,93,80000.0,1,Good,43.4,2.0,No,12.0,No
+B4105,Honda,56,40385.0,1,Fair,54.3,3.0,No,17.0,Yes
+B4360,Bajaj,78,48255.0,1,Good,33.2,,Yes,12.0,Yes
+B4462,Honda,47,25478.0,1,Good,,5.0,Yes,36.3,No
+B4490,Royal Enfield,67,29194.0,1,Fair,56.1,1.0,No,45.2,Yes
+B4159,TVS,45,15235.0,3,Good,,3.0,Yes,24.4,No
+B4147,Hero,117,45072.0,1,Fair,45.1,4.0,Yes,12.0,No
+B4395,TVS,31,16804.0,1,Excellent,36.0,0.0,No,50.1,Yes
+B4220,Yamaha,45,21067.0,1,Excellent,58.9,4.0,Yes,43.3,No
+B4346,Honda,84,80000.0,1,Good,56.0,2.0,No,12.0,Yes
+B4442,Yamaha,47,15572.0,1,Fair,42.4,5.0,Yes,30.8,No
+B4266,Bajaj,52,24602.0,1,Excellent,42.8,3.0,No,35.7,No
+B4542,Yamaha,37,38056.0,1,Good,47.4,3.0,Yes,41.3,No
+B4309,Hero,70,45181.0,3,Good,64.2,1.0,Yes,12.0,No
+B4460,TVS,22,12378.0,1,Good,35.1,0.0,Yes,48.2,Yes
+B4322,Bajaj,76,26065.0,1,Good,47.0,0.0,Yes,18.7,Yes
+B4313,TVS,27,15609.0,1,Good,42.8,,Yes,39.4,No
+B4446,TVS,7,3293.0,2,Excellent,67.2,,No,66.8,No
+B4415,Bajaj,59,36957.0,2,Good,23.5,4.0,Yes,16.3,Yes
+B4433,Hero,73,42417.0,1,Good,32.8,2.0,Yes,12.0,Yes
+B4142,Honda,99,58340.0,2,Good,60.6,2.0,No,12.0,Yes
+B4450,Yamaha,44,33483.0,2,Excellent,52.7,2.0,Yes,36.8,Yes
+B4483,Hero,109,63075.0,1,Fair,53.8,2.0,Yes,12.0,No
+B4459,TVS,67,10718.0,2,Good,63.9,1.0,No,17.5,Yes
+B4176,Yamaha,61,23173.0,1,Good,65.7,2.0,Yes,23.4,Yes
+B4451,TVS,53,41098.0,2,Good,41.5,1.0,No,12.0,No
+B4500,TVS,46,32363.0,1,Excellent,38.3,2.0,No,32.6,No
+B4173,Hero,109,62856.0,2,Fair,28.3,5.0,No,12.0,No
+B4422,Honda,70,57695.0,2,Excellent,60.9,1.0,Yes,18.5,Yes
+B4480,Hero,13,2957.0,3,Good,,,Yes,43.9,No
+B4449,Honda,35,14131.0,1,Good,38.4,1.0,Yes,46.5,No
+B4252,Bajaj,51,46239.0,1,Good,32.0,,No,25.5,Yes
+B4132,Yamaha,81,39049.0,2,Good,43.7,3.0,Yes,12.0,Yes
+B4115,TVS,48,17514.0,1,Fair,45.3,2.0,No,21.8,No
+B4207,Hero,86,15138.0,1,Good,23.6,2.0,No,12.0,Yes
+B4535,Bajaj,9,5469.0,1,Good,55.5,1.0,No,66.7,No
+B4247,TVS,12,4403.0,2,Good,47.1,2.0,Yes,65.7,No
+B4354,Bajaj,113,46814.0,1,Fair,56.0,2.0,Yes,12.0,No
+B4135,TVS,8,2913.0,1,Good,42.9,1.0,Yes,72.8,No
+B4325,Honda,101,80000.0,1,Excellent,34.3,2.0,Yes,12.0,Yes
+B4272,Bajaj,61,36277.0,1,Good,51.5,1.0,Yes,19.7,Yes
+B4439,Bajaj,44,26281.0,2,Good,46.2,,Yes,19.4,Yes
+B4117,TVS,36,18464.0,1,Excellent,44.0,3.0,Yes,52.9,No
+B4256,Bajaj,75,20985.0,1,Excellent,37.5,0.0,No,21.6,Yes
+B4531,Yamaha,45,27113.0,3,Excellent,35.7,3.0,No,27.6,Yes
+B4443,Honda,48,31986.0,2,Fair,,1.0,No,12.0,No
+B4457,Bajaj,111,58045.0,2,Good,58.6,2.0,Yes,12.0,Yes
+B4527,TVS,105,80000.0,2,Fair,49.4,,Yes,12.0,Yes
+B4476,Yamaha,55,19511.0,3,Fair,39.5,1.0,No,12.0,No
+B4520,Hero,82,58305.0,2,Excellent,45.6,,Yes,12.0,No
+B4308,Honda,91,68264.0,3,Good,52.4,2.0,Yes,12.0,Yes
+B4164,TVS,112,57043.0,2,Excellent,51.9,3.0,Yes,12.0,Yes
+B4110,Hero,94,59300.0,1,Excellent,36.2,3.0,Yes,12.0,Yes
+B4486,Royal Enfield,112,46367.0,1,Good,51.9,1.0,Yes,20.7,Yes
+B4211,Honda,35,19527.0,1,Good,63.2,1.0,Yes,43.2,No
+B4512,Honda,6,3397.0,2,Good,32.7,,Yes,65.5,No
+B4491,Bajaj,81,73409.0,2,Good,61.6,2.0,No,12.0,No
+B4448,Hero,54,28657.0,1,Excellent,58.4,0.0,Yes,22.8,Yes
+B4193,TVS,18,14850.0,3,Good,48.0,,Yes,40.5,No
+B4521,TVS,85,75590.0,1,Fair,57.7,0.0,Yes,12.0,No
+B4393,Hero,60,57675.0,3,Excellent,37.8,2.0,No,12.0,Yes
+B4361,Royal Enfield,18,9306.0,1,Excellent,60.2,1.0,Yes,138.1,No
+B4200,TVS,85,34715.0,2,Excellent,53.6,3.0,Yes,13.9,Yes
+B4267,Yamaha,67,53889.0,1,Good,55.2,,Yes,15.4,Yes
+B4165,Hero,109,10237.0,1,Excellent,48.1,3.0,Yes,35.0,Yes
+B4414,Honda,67,36281.0,1,Good,54.6,,No,20.4,Yes
+B4341,TVS,61,50762.0,2,Fair,52.8,0.0,No,12.0,Yes
+B4106,Honda,6,4428.0,3,Good,60.6,2.0,Yes,71.8,No
+B4249,Bajaj,115,43735.0,1,Fair,37.8,4.0,No,12.0,No
+B4525,TVS,63,41999.0,2,Excellent,52.1,2.0,Yes,24.4,No
+B4452,Hero,46,36813.0,1,Good,51.6,,Yes,12.0,Yes
+B4519,Honda,10,5101.0,3,Good,35.7,1.0,Yes,67.7,No
+B4248,Yamaha,116,67412.0,2,Excellent,54.9,5.0,No,12.0,Yes
+B4453,Bajaj,110,55486.0,1,Good,54.2,0.0,Yes,12.0,Yes
+B4478,Hero,34,22182.0,1,Fair,52.1,4.0,No,36.5,No
+B4352,Honda,120,44735.0,1,Excellent,45.3,,No,12.0,Yes
+B4421,Hero,109,56347.0,2,Excellent,33.6,3.0,Yes,12.0,Yes
+B4285,Royal Enfield,108,79162.0,3,Fair,52.1,3.0,Yes,12.0,Yes
+B4241,Royal Enfield,100,54547.0,1,Excellent,36.7,2.0,No,20.8,Yes
+B4232,TVS,110,80000.0,1,Good,51.2,,No,12.0,No
+B4218,Hero,87,51390.0,2,Good,49.5,3.0,Yes,12.0,No
+B4344,Hero,60,26113.0,2,Good,53.1,4.0,No,12.0,Yes
+B4387,Bajaj,78,63596.0,3,Good,34.0,2.0,Yes,12.0,Yes
+B4219,Hero,108,80000.0,2,Fair,60.4,5.0,No,12.0,No
+B4528,Honda,58,30004.0,1,Good,40.6,3.0,Yes,33.1,Yes
+B4138,Hero,60,28159.0,1,Excellent,41.3,2.0,Yes,32.5,No
+B4484,TVS,82,74049.0,1,Fair,56.0,3.0,Yes,12.0,No
+B4544,Honda,17,12468.0,1,Good,51.6,2.0,No,66.8,No
+B4406,Honda,62,16248.0,3,Good,28.6,2.0,Yes,15.3,Yes
+B4184,Bajaj,88,49028.0,3,Excellent,60.8,3.0,Yes,12.0,Yes
+B4324,Yamaha,47,31517.0,3,Good,67.0,,No,12.0,Yes
+B4119,Bajaj,50,26606.0,2,Excellent,53.8,0.0,No,25.8,Yes
+B4172,Honda,81,29881.0,1,Excellent,47.7,1.0,Yes,35.3,Yes
+B4175,Hero,67,37799.0,2,Good,48.0,3.0,Yes,12.0,No
+B4461,Royal Enfield,93,59270.0,2,Good,60.3,,No,19.0,Yes
+B4364,TVS,53,21122.0,1,Excellent,25.3,1.0,No,32.2,No
+B4140,Honda,117,62896.0,1,Excellent,42.7,2.0,No,12.0,Yes
+B4482,Royal Enfield,4,3710.0,2,Fair,46.9,2.0,No,135.8,No
+B4210,Hero,5,1627.0,2,Good,62.8,5.0,Yes,57.3,No
+B4403,Royal Enfield,115,23187.0,1,Fair,42.6,1.0,No,12.0,Yes
+B4505,TVS,89,33224.0,2,Excellent,45.6,4.0,No,12.0,Yes
+B4148,Bajaj,48,28774.0,1,Good,56.6,1.0,No,21.1,No
+B4118,Bajaj,17,9227.0,1,Fair,55.3,3.0,Yes,55.0,No
+B4143,Yamaha,89,66955.0,3,Good,48.5,5.0,No,12.0,Yes
+B4373,Hero,111,80000.0,2,Excellent,58.4,1.0,Yes,12.0,Yes
+B4190,Bajaj,69,52649.0,1,Fair,51.9,2.0,Yes,12.0,No
+B4473,Honda,5,4341.0,2,Fair,41.4,4.0,Yes,62.4,No
+B4375,Royal Enfield,106,60584.0,1,Good,56.6,2.0,No,15.0,Yes
+B4434,Hero,43,21544.0,1,Excellent,62.0,2.0,Yes,40.6,No
+B4260,TVS,27,,1,Fair,49.2,3.0,Yes,45.7,No
+B4214,Honda,70,35752.0,3,Good,33.9,2.0,No,12.9,No
+B4428,Bajaj,4,3418.0,1,Good,58.7,5.0,Yes,77.8,No
+B4168,Royal Enfield,117,52274.0,2,Good,41.0,3.0,Yes,12.0,Yes
+B4315,Bajaj,93,49215.0,1,Good,54.5,0.0,Yes,12.0,Yes
+B4231,Hero,110,80000.0,1,Fair,45.6,0.0,Yes,12.0,No
+B4101,Honda,59,42815.0,3,Good,45.1,0.0,Yes,12.0,Yes
+B4287,TVS,49,27428.0,1,Excellent,37.7,0.0,No,50.0,Yes
+B4327,Royal Enfield,27,3404.0,2,Fair,53.1,4.0,No,97.9,No
+B4278,Hero,18,12451.0,1,Excellent,65.4,2.0,Yes,68.0,No
+B4427,Hero,28,18476.0,1,Excellent,37.7,5.0,Yes,54.9,No
+B4281,Honda,90,46824.0,2,Good,56.5,3.0,Yes,12.0,Yes
+B4233,Bajaj,112,47671.0,1,Good,52.4,,Yes,12.0,No
+B4323,Hero,80,39697.0,2,Good,40.2,3.0,Yes,12.0,Yes
+B4348,Hero,66,55292.0,1,Fair,37.5,3.0,Yes,12.0,No
+B4383,Honda,8,5429.0,2,Good,,3.0,No,70.9,No
+B4268,Yamaha,94,36605.0,2,Fair,59.7,3.0,Yes,12.0,Yes
+B4435,Honda,23,12499.0,1,Excellent,38.7,1.0,Yes,61.8,No
+B4363,Hero,4,2353.0,1,Excellent,37.4,2.0,Yes,81.7,No
+B4242,Royal Enfield,38,26002.0,2,Excellent,46.4,5.0,Yes,89.9,Yes
+B4345,Hero,25,9871.0,1,Excellent,53.5,,No,57.9,Yes
+B4400,Bajaj,15,6952.0,1,Excellent,48.5,3.0,No,69.5,No
+B4127,Honda,105,,2,Good,58.8,,Yes,12.0,Yes
+B4238,Hero,106,63200.0,1,Good,63.8,2.0,No,12.0,Yes
+B4463,TVS,37,35286.0,1,Excellent,42.9,1.0,Yes,42.2,No
+B4189,Bajaj,59,52773.0,3,Excellent,50.5,4.0,Yes,12.0,Yes
+B4517,Royal Enfield,67,43238.0,1,Excellent,31.9,2.0,Yes,53.3,Yes
+B4123,Honda,39,20915.0,2,Good,35.7,2.0,Yes,27.3,Yes
+B4196,Yamaha,76,64066.0,1,Excellent,46.2,,No,12.0,Yes
+B4179,Bajaj,106,76781.0,3,Good,43.7,,No,12.0,No
+B4530,Honda,110,80000.0,2,Good,52.6,2.0,No,12.0,Yes
+B4292,Yamaha,26,18358.0,1,Fair,43.3,5.0,No,53.9,No
+B4342,Hero,21,11193.0,1,Good,46.1,1.0,No,47.9,No
+B4470,Honda,58,28237.0,2,Good,55.7,4.0,Yes,32.8,Yes
+B4271,Honda,7,5617.0,2,Excellent,26.2,,Yes,70.2,Yes
+B4426,Hero,83,80000.0,1,Excellent,48.9,5.0,No,12.0,Yes
+B4167,TVS,78,60361.0,3,Excellent,,,No,12.0,Yes
+B4245,Royal Enfield,20,11601.0,2,Good,51.8,1.0,Yes,120.7,No
+B4508,Royal Enfield,82,53741.0,2,Good,44.5,4.0,No,23.7,Yes
+B4546,TVS,70,38682.0,1,Fair,42.2,1.0,No,12.0,No
+B4181,TVS,9,5933.0,1,Fair,58.9,0.0,No,48.8,No
+B4331,TVS,57,35187.0,2,Good,30.0,3.0,Yes,12.0,Yes
+B4137,TVS,7,4248.0,3,Good,48.8,1.0,Yes,66.3,No
+B4430,Hero,113,57057.0,1,Good,52.4,1.0,Yes,12.0,Yes
+B4485,Bajaj,90,,1,Good,59.5,4.0,No,12.0,No
+B4240,Bajaj,11,516.0,1,Good,47.2,5.0,Yes,73.3,No
+B4134,Hero,27,7136.0,2,Good,,3.0,Yes,35.5,Yes
+B4488,Hero,88,52408.0,1,Good,42.0,3.0,Yes,12.0,Yes
+B4225,Royal Enfield,13,8428.0,1,Good,55.3,1.0,Yes,148.9,No
+B4336,Hero,65,40057.0,2,Good,36.5,1.0,No,12.0,Yes
+B4401,Royal Enfield,74,52287.0,1,Good,49.9,1.0,Yes,42.1,Yes
+B4516,Hero,85,21431.0,1,Excellent,57.7,3.0,Yes,26.7,Yes
+B4353,TVS,112,69147.0,2,Excellent,,3.0,No,12.0,Yes
+B4276,Yamaha,26,8695.0,1,Good,37.3,,Yes,61.9,No
+B4192,Royal Enfield,40,8184.0,1,Good,43.5,3.0,No,96.4,Yes
+B4209,Bajaj,19,14536.0,1,Good,51.8,,No,51.4,No
+B4380,Bajaj,89,60749.0,3,Excellent,29.4,1.0,Yes,12.0,Yes
+B4438,Hero,45,32451.0,3,Good,61.3,2.0,Yes,20.1,No
+B4171,Hero,18,5174.0,1,Good,51.3,2.0,Yes,42.4,No
+B4261,Hero,10,6638.0,1,Good,44.3,3.0,No,53.8,No
+B4432,Hero,35,13171.0,2,Fair,25.2,5.0,Yes,21.0,No
+B4369,Yamaha,45,37989.0,2,Good,63.8,,No,31.4,No
+B4539,Royal Enfield,57,33339.0,1,Excellent,40.1,,Yes,64.1,Yes
+B4437,Bajaj,99,55980.0,1,Good,53.9,3.0,No,12.0,No
+B4191,Hero,34,14745.0,1,Fair,49.2,1.0,Yes,32.8,No
+B4180,TVS,31,20400.0,1,Good,48.5,0.0,Yes,41.3,No
+B4291,Yamaha,120,80000.0,2,Good,56.0,3.0,Yes,12.0,Yes
+B4509,Bajaj,103,24095.0,1,Fair,51.1,1.0,No,12.0,Yes

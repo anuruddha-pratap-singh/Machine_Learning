@@ -1,0 +1,621 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Placement Score Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=JetBrains+Mono:wght@400;600;800&display=swap">
+<style>
+/* Layout: lab bench. A five-step flow strip on top, the student's sliders pinned on the left,
+   one card per step on the right. Light ground + dark saturated marks so it survives a whiteboard projector. */
+:root{
+  --bg:#E8EDF5;
+  --surface:#FFFFFF;
+  --surface-2:#F1F4FA;
+  --ink:#0A1630;
+  --ink-2:#2C3A55;
+  --line:#BAC5D6;
+  --track:#C9D2E1;
+  --accent:#1C3DBE;
+  --accent-soft:#DCE4FB;
+  --on-accent:#FFFFFF;
+  --pos:#0B6B35;
+  --on-pos:#FFFFFF;
+  --neg:#B11F19;
+  --on-neg:#FFFFFF;
+  --thr:#8A4A00;
+  --code-bg:#EEF2F9;
+  --code-ink:#0A1630;
+  --code-dim:#4A5874;
+  --code-acc:#1C3DBE;
+
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A101E; --surface:#121B2F; --surface-2:#18233B; --ink:#EDF2FB; --ink-2:#B9C4D9;
+    --line:#2C3956; --track:#2C3956; --accent:#8FA9FF; --accent-soft:#1E2A52; --on-accent:#0A1630;
+    --pos:#4ADE80; --on-pos:#06200F; --neg:#FF8A7E; --on-neg:#2A0805; --thr:#F2B54A;
+    --code-bg:#0B1324; --code-ink:#E6ECF8; --code-dim:#8494B5; --code-acc:#9DB7FF;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A101E; --surface:#121B2F; --surface-2:#18233B; --ink:#EDF2FB; --ink-2:#B9C4D9;
+  --line:#2C3956; --track:#2C3956; --accent:#8FA9FF; --accent-soft:#1E2A52; --on-accent:#0A1630;
+  --pos:#4ADE80; --on-pos:#06200F; --neg:#FF8A7E; --on-neg:#2A0805; --thr:#F2B54A;
+  --code-bg:#0B1324; --code-ink:#E6ECF8; --code-dim:#8494B5; --code-acc:#9DB7FF;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.page{max-width:1480px;margin:0 auto;padding-inline:clamp(16px,2.6vw,32px);padding-block:20px 48px;display:grid;gap:18px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* ---------- header ---------- */
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px 32px}
+.eyebrow{margin:0 0 6px;font-family:var(--f-mono);font-size:13px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--accent)}
+h1{margin:0;font-family:var(--f-display);font-weight:800;font-size:clamp(30px,3.4vw,46px);line-height:1.04;letter-spacing:-.015em;text-wrap:balance}
+.sub{margin:8px 0 0;color:var(--ink-2);font-size:17px;max-width:64ch}
+.meta{margin:0;font-family:var(--f-mono);font-size:13px;color:var(--ink-2);display:flex;flex-wrap:wrap;gap:4px 16px}
+.meta b{color:var(--ink);font-weight:800}
+
+/* ---------- flow strip ---------- */
+.flow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:26px}
+.node{position:relative;min-width:0;background:var(--surface);border:2px solid var(--ink);border-radius:12px;padding:9px 12px 10px;display:grid;gap:1px}
+.node:not(:last-child)::after{content:"\2192";position:absolute;right:-22px;top:50%;transform:translateY(-50%);font-family:var(--f-mono);font-weight:800;font-size:18px;color:var(--ink)}
+.node .k{font-family:var(--f-mono);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.node .nm{font-family:var(--f-display);font-weight:600;font-size:16px;line-height:1.2}
+.node .nv{font-family:var(--f-mono);font-size:14px;font-weight:600;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-variant-numeric:tabular-nums}
+.node.live .nv{font-size:18px;font-weight:800;color:var(--ink)}
+.node.verdict{border-color:var(--pos);background:var(--pos);color:var(--on-pos)}
+.node.verdict .k,.node.verdict .nv{color:var(--on-pos)}
+.node.verdict.no{border-color:var(--neg);background:var(--neg);color:var(--on-neg)}
+.node.verdict.no .k,.node.verdict.no .nv{color:var(--on-neg)}
+@media (min-width:1121px){
+  .flow{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:8px}
+}
+@media (max-width:1120px){
+  .flow{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:14px}
+  .node:nth-child(3)::after{content:none}
+}
+@media (max-width:560px){
+  .flow{grid-template-columns:minmax(0,1fr);gap:20px}
+  .flow .node:not(:last-child)::after{content:"\2193";right:auto;left:22px;top:auto;bottom:-23px;transform:none}
+}
+
+/* ---------- lab grid ---------- */
+.lab{display:grid;grid-template-columns:minmax(290px,360px) minmax(0,1fr);gap:18px;align-items:start}
+.panel{position:static;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 14px 12px;min-width:0}
+.steps{display:grid;gap:18px;grid-template-columns:minmax(0,1fr);align-items:start;min-width:0}
+@media (min-width:1400px){
+  .steps{grid-template-columns:minmax(0,.8fr) minmax(0,1.5fr);grid-template-areas:"s2 s3" "s4 s4" "s5 s5" "code code"}
+  .s2{grid-area:s2}.s3{grid-area:s3}.s4{grid-area:s4}.s5{grid-area:s5}.s-code{grid-area:code}
+}
+@media (min-width:981px) and (min-height:760px){
+  .panel{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px)}
+}
+@media (min-width:1121px) and (min-height:760px){
+  .panel{top:calc(env(safe-area-inset-top,0px) + 112px)}
+}
+@media (max-width:980px){
+  .lab{grid-template-columns:minmax(0,1fr)}
+}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px 18px;min-width:0}
+.card-head{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}
+.card-head > div{min-width:0}
+.stepno{flex:none;display:inline-grid;place-items:center;min-width:34px;height:34px;padding:0 9px;border-radius:999px;background:var(--accent);color:var(--on-accent);font-family:var(--f-mono);font-weight:800;font-size:15px}
+h2{margin:3px 0 2px;font-family:var(--f-display);font-weight:600;font-size:21px;line-height:1.2;text-wrap:balance}
+.cap{margin:0;color:var(--ink-2);font-size:15px;max-width:66ch}
+
+/* ---------- sliders ---------- */
+.presets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:2px 0 12px}
+.presets button{font:inherit;font-weight:700;font-size:14px;line-height:1;padding:8px 13px;border-radius:999px;border:2px solid var(--ink);background:var(--surface);color:var(--ink);cursor:pointer}
+.presets button:hover{background:var(--surface-2)}
+.presets button[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
+.ctls{display:grid;gap:2px}
+.ctl{padding:7px 10px 6px;border-radius:10px;display:grid;gap:2px}
+.ctl.is-active{background:var(--accent-soft)}
+.ctl-row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.ctl label{font-weight:700;font-size:16px;line-height:1.25;cursor:pointer}
+.ctl label code{font-family:var(--f-mono);font-size:12px;font-weight:400;color:var(--ink-2);margin-left:6px}
+.ctl output{font-family:var(--f-mono);font-weight:800;font-size:20px;font-variant-numeric:tabular-nums}
+
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:26px;margin:0;background:transparent;cursor:pointer;--pct:50%}
+input[type=range]::-webkit-slider-runnable-track{height:8px;border-radius:4px;background:linear-gradient(to right,var(--accent) 0 var(--pct),var(--track) var(--pct) 100%)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:22px;height:22px;margin-top:-7px;border-radius:50%;background:var(--surface);border:4px solid var(--accent)}
+input[type=range]::-moz-range-track{height:8px;border-radius:4px;background:var(--track)}
+input[type=range]::-moz-range-progress{height:8px;border-radius:4px;background:var(--accent)}
+input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--surface);border:4px solid var(--accent)}
+input[type=range]:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-radius:6px}
+
+/* ---------- tables ---------- */
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th{padding:6px 8px;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-2);text-align:left;border-bottom:2px solid var(--ink);white-space:nowrap}
+td{padding:7px 8px;border-bottom:1px solid var(--line);font-size:16px;white-space:nowrap}
+th.num,td.num{text-align:right;font-family:var(--f-mono)}
+td.num{font-weight:600}
+td.strong{font-weight:800}
+td.c-pos{color:var(--pos);font-weight:800}
+td.c-neg{color:var(--neg);font-weight:800}
+tbody tr{cursor:pointer}
+tbody tr:hover td{background:var(--surface-2)}
+tbody tr.is-active td{background:var(--accent-soft)}
+tbody tr.is-active td:first-child{font-weight:800}
+tbody tr.is-active td:first-child::before{content:"\25B8  ";color:var(--accent)}
+.bar{position:relative;height:16px;min-width:120px}
+.bar::before{content:"";position:absolute;left:50%;top:-5px;bottom:-5px;width:2px;margin-left:-1px;background:var(--ink)}
+.bar span{position:absolute;top:0;height:100%;width:0}
+.bar span.pos{left:50%;background:var(--pos);border-radius:0 3px 3px 0}
+.bar span.neg{right:50%;background:var(--neg);border-radius:3px 0 0 3px}
+.bar-ends{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:11px;font-weight:600;color:var(--ink-2);text-transform:none;letter-spacing:0}
+
+.formula{margin:0 0 10px;font-family:var(--f-mono);font-size:17px;font-weight:600;overflow-wrap:anywhere}
+.formula sub{font-size:.7em}
+
+.worked{margin-top:14px;padding:12px 14px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);display:grid;gap:4px}
+.worked .lbl{font-size:13px;font-weight:700;color:var(--ink-2);text-transform:uppercase;letter-spacing:.05em}
+.worked .lines{font-family:var(--f-mono);font-size:17px;font-weight:600;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.worked .r{font-weight:800;color:var(--accent)}
+.worked .r.pos{color:var(--pos)}
+.worked .r.neg{color:var(--neg)}
+.arrow{color:var(--ink-2)}
+
+/* ---------- sum ---------- */
+.sum-h{margin:16px 0 8px;font-size:13px;font-weight:700;color:var(--ink-2);text-transform:uppercase;letter-spacing:.05em}
+.eq{display:flex;flex-wrap:wrap;align-items:flex-start;gap:8px 6px}
+.term{display:grid;justify-items:center;gap:1px;padding:6px 10px;border-radius:10px;border:2px solid var(--line);background:var(--surface)}
+.term b{font-family:var(--f-mono);font-size:19px;font-weight:800;font-variant-numeric:tabular-nums}
+.term small{font-size:12px;font-weight:700;color:var(--ink-2);white-space:nowrap}
+.term.pos b{color:var(--pos)}
+.term.neg b{color:var(--neg)}
+.term.icpt{border-color:var(--ink-2)}
+.term.total{border-color:var(--accent);background:var(--accent-soft)}
+.term.total b{color:var(--accent);font-size:22px}
+.op{font-family:var(--f-mono);font-weight:800;font-size:20px;padding-top:9px;color:var(--ink-2)}
+.note{margin:12px 0 0;font-size:15px;color:var(--ink)}
+.note b{font-family:var(--f-mono)}
+
+/* ---------- sigmoid ---------- */
+.sig-body{display:grid;gap:12px 32px;grid-template-columns:minmax(0,1fr);align-items:center}
+.sig-body .chart{max-width:680px}
+@media (min-width:1400px){
+  .sig-body{grid-template-columns:minmax(240px,320px) minmax(0,1fr)}
+}
+.calc{display:grid;gap:3px;margin:0 0 10px;font-family:var(--f-mono);font-size:17px;font-variant-numeric:tabular-nums}
+.calc .r{color:var(--accent);font-weight:800}
+.chart{display:block;width:100%;height:auto;max-width:100%}
+.chart .grid{stroke:var(--line);stroke-width:1}
+.chart .axis{stroke:var(--ink);stroke-width:2}
+.chart .tick{fill:var(--ink-2);font-family:var(--f-mono);font-size:13px}
+.chart .ttl{fill:var(--ink);font-family:var(--f-body);font-weight:700;font-size:14px}
+.chart .curve{fill:none;stroke:var(--accent);stroke-width:4;stroke-linecap:round}
+.chart .thr{stroke:var(--thr);stroke-width:2.5;stroke-dasharray:9 6}
+.chart .thr-l{fill:var(--thr);font-family:var(--f-mono);font-weight:800;font-size:13px}
+.chart .side{fill:var(--ink-2);font-family:var(--f-body);font-weight:700;font-size:13px}
+.chart .drop{stroke:var(--ink);stroke-width:1.5;stroke-dasharray:4 4}
+.chart .dot{fill:var(--accent);stroke:var(--surface);stroke-width:3}
+.chart .dot-l{fill:var(--ink);font-family:var(--f-mono);font-weight:800;font-size:14px;paint-order:stroke;stroke:var(--surface);stroke-width:5px;stroke-linejoin:round}
+
+/* ---------- decision ---------- */
+.meter{position:relative;height:24px;margin:30px 0 6px;border-radius:6px;background:var(--track)}
+.meter .fill{position:absolute;left:0;top:0;bottom:0;border-radius:6px;background:var(--pos);width:50%}
+.meter .fill.no{background:var(--neg)}
+.meter .mid{position:absolute;left:50%;top:-9px;bottom:-9px;width:3px;margin-left:-1.5px;background:var(--thr)}
+.meter .mid-l{position:absolute;left:50%;top:-29px;transform:translateX(-50%);font-family:var(--f-mono);font-size:12px;font-weight:800;color:var(--thr);white-space:nowrap}
+.meter-ends{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:13px;color:var(--ink-2)}
+.decide{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:14px}
+.rule{font-family:var(--f-mono);font-size:22px;font-weight:800;font-variant-numeric:tabular-nums}
+.chip{font-family:var(--f-display);font-weight:800;font-size:22px;line-height:1;padding:9px 18px;border-radius:999px;background:var(--pos);color:var(--on-pos)}
+.chip.no{background:var(--neg);color:var(--on-neg)}
+
+/* ---------- code ---------- */
+pre{margin:0;padding:14px 16px;border-radius:10px;background:var(--code-bg);color:var(--code-ink);border:1px solid var(--line);font-family:var(--f-mono);font-size:15px;line-height:1.75;overflow-x:auto}
+pre .cm{color:var(--code-dim)}
+pre .cv{color:var(--code-acc);font-weight:800}
+.s-code .cap{margin-top:10px}
+
+@media (prefers-reduced-motion: no-preference){
+  .bar span{transition:width .15s ease}
+  .meter .fill{transition:width .15s ease}
+  #dot{transition:transform .15s ease}
+}
+</style>
+
+<div class="page">
+  <header class="top">
+    <div>
+      <p class="eyebrow">Logistic regression &middot; placement.csv</p>
+      <h1>Placement Score Lab</h1>
+      <p class="sub">Move a slider and follow one student's numbers all the way from raw data to a placed / not placed decision.</p>
+    </div>
+    <p class="meta"><span>trained on <b>440</b> students</span><span><b>7</b> numeric features</span><span>target <b>placed</b> (0 / 1)</span></p>
+  </header>
+
+  <ol class="flow" aria-label="Calculation flow">
+    <li class="node"><span class="k">Step 1</span><span class="nm">Student data</span><span class="nv">7 values</span></li>
+    <li class="node"><span class="k">Step 2</span><span class="nm">Scale</span><span class="nv">(x &minus; mean) / std</span></li>
+    <li class="node live"><span class="k">Step 3</span><span class="nm">Weights + intercept</span><span class="nv" id="n3">z = 0.54</span></li>
+    <li class="node live"><span class="k">Step 4</span><span class="nm">Sigmoid</span><span class="nv" id="n4">p = 0.63</span></li>
+    <li class="node live verdict" id="n5box"><span class="k">Step 5</span><span class="nm">Threshold 0.5</span><span class="nv" id="n5">Placed (1)</span></li>
+  </ol>
+
+  <div class="lab">
+    <aside class="panel" aria-labelledby="h-data">
+      <div class="card-head">
+        <span class="stepno">1</span>
+        <div><h2 id="h-data">Student data</h2><p class="cap">Pick a student, then change one slider at a time.</p></div>
+      </div>
+      <div class="presets" role="group" aria-label="Example students" id="presets"></div>
+      <div class="ctls" id="controls"></div>
+    </aside>
+
+    <div class="steps">
+      <section class="card s2" aria-labelledby="h-s2">
+        <div class="card-head">
+          <span class="stepno">2</span>
+          <div>
+            <h2 id="h-s2">Scale each value</h2>
+            <p class="cap">StandardScaler: 0 = an average student, +1 = one standard deviation above average.</p>
+          </div>
+        </div>
+        <p class="formula">scaled = (value &minus; mean) / std</p>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Feature</th><th class="num">Value</th><th class="num">Scaled</th></tr></thead>
+            <tbody id="rows2"></tbody>
+          </table>
+        </div>
+        <div class="worked" aria-live="polite">
+          <span class="lbl" id="w2-lbl">CGPA</span>
+          <div class="lines" id="w2-lines"></div>
+        </div>
+      </section>
+
+      <section class="card s3" aria-labelledby="h-s3">
+        <div class="card-head">
+          <span class="stepno">3</span>
+          <div>
+            <h2 id="h-s3">Multiply by the weights, add the intercept &rarr; z</h2>
+            <p class="cap">The model learned one weight per feature. Green pushes towards placed, red pushes away.</p>
+          </div>
+        </div>
+        <p class="formula">z = intercept + w<sub>1</sub>&middot;x<sub>1</sub> + w<sub>2</sub>&middot;x<sub>2</sub> + &hellip; + w<sub>7</sub>&middot;x<sub>7</sub></p>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th class="num">Scaled (x)</th>
+                <th class="num">Weight (w)</th>
+                <th class="num">w &times; x</th>
+                <th><div class="bar-ends"><span>&minus;2</span><span>0</span><span>+2</span></div></th>
+              </tr>
+            </thead>
+            <tbody id="rows3"></tbody>
+          </table>
+        </div>
+        <div class="worked" aria-live="polite">
+          <span class="lbl" id="w3-lbl">CGPA</span>
+          <div class="lines" id="w3-lines"></div>
+        </div>
+        <p class="sum-h">Add them all up</p>
+        <div class="eq" id="eq"></div>
+        <p class="note" id="z-note"></p>
+      </section>
+
+      <section class="card s4" aria-labelledby="h-s4">
+        <div class="card-head">
+          <span class="stepno">4</span>
+          <div>
+            <h2 id="h-s4">Sigmoid turns z into a probability</h2>
+            <p class="cap">Any z, however large or small, comes out between 0 and 1.</p>
+          </div>
+        </div>
+        <div class="sig-body">
+          <div>
+            <p class="formula">p = 1 / (1 + e<sup>&minus;z</sup>)</p>
+            <div class="calc" id="calc"></div>
+          </div>
+          <svg class="chart" id="chart" viewBox="0 0 560 324" role="img" aria-label="Sigmoid curve">
+            <g id="grid"></g>
+            <path class="curve" id="curve" d=""></path>
+            <line class="thr" x1="48" x2="544" y1="152" y2="152"></line>
+            <text class="thr-l" x="56" y="144">threshold 0.5</text>
+            <text class="side" x="540" y="44" text-anchor="end">p &ge; 0.5 &rarr; placed</text>
+            <text class="side" x="56" y="270">p &lt; 0.5 &rarr; not placed</text>
+            <line class="drop" id="drop-v" x1="0" x2="0" y1="0" y2="280"></line>
+            <line class="drop" id="drop-h" x1="48" x2="0" y1="0" y2="0"></line>
+            <g id="dot"><circle class="dot" r="9" cx="0" cy="0"></circle></g>
+            <text class="dot-l" id="dot-l" x="0" y="0"></text>
+          </svg>
+        </div>
+      </section>
+
+      <section class="card s5" aria-labelledby="h-s5">
+        <div class="card-head">
+          <span class="stepno">5</span>
+          <div>
+            <h2 id="h-s5">The threshold turns the probability into a class</h2>
+            <p class="cap">Sigmoid gives a probability. The 0.5 cut-off is what turns it into 0 or 1.</p>
+          </div>
+        </div>
+        <div class="meter" aria-hidden="true">
+          <div class="fill" id="m-fill"></div>
+          <div class="mid"></div>
+          <div class="mid-l">0.5</div>
+        </div>
+        <div class="meter-ends"><span>0 &middot; not placed</span><span>1 &middot; placed</span></div>
+        <div class="decide" aria-live="polite">
+          <span class="rule" id="rule">0.63 &ge; 0.50</span>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+          <span class="chip" id="chip">Placed (1)</span>
+        </div>
+      </section>
+
+      <section class="card s-code" aria-labelledby="h-code">
+        <div class="card-head">
+          <span class="stepno">&lt;/&gt;</span>
+          <div>
+            <h2 id="h-code">The same numbers in the notebook</h2>
+            <p class="cap">Print these after training and they match this page.</p>
+          </div>
+        </div>
+<pre id="code"></pre>
+        <p class="cap">Notebook flow: median fill &rarr; <code>train_test_split(test_size=0.2, random_state=42)</code> &rarr; <code>StandardScaler</code> &rarr; <code>LogisticRegression()</code>.</p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  // Fitted on placement.csv: median fill -> train_test_split(test_size=0.2, random_state=42) -> StandardScaler -> LogisticRegression()
+  var MODEL = {
+    mean:[7.428136363636364,76.45863636363637,1.0272727272727273,2.5272727272727273,0.8636363636363636,282.0022727272727,6.170454545454546],
+    std:[0.9026190072860474,8.84554165845173,0.9812708912341542,1.43152233595816,1.391384351364906,139.91711018352058,1.677536010378228],
+    coef:[1.6453824319658434,0.10691269935025088,0.47344618090649926,0.516275154472458,-0.8953471216399105,0.7697463741433449,0.8825610633935908],
+    intercept:0.4822104554487736
+  };
+
+  var FEATURES = [
+    {key:"cgpa",                label:"CGPA",          short:"CGPA",     min:5,  max:9.9, step:0.1, dec:1},
+    {key:"twelfth_percent",     label:"12th %",        short:"12th %",   min:55, max:98,  step:0.5, dec:1},
+    {key:"internships",         label:"Internships",   short:"Intern.",  min:0,  max:3,   step:1,   dec:0},
+    {key:"projects",            label:"Projects",      short:"Projects", min:0,  max:7,   step:1,   dec:0},
+    {key:"backlogs",            label:"Backlogs",      short:"Backlogs", min:0,  max:6,   step:1,   dec:0},
+    {key:"prep_hours",          label:"Prep hours",    short:"Prep hrs", min:20, max:900, step:5,   dec:0},
+    {key:"communication_score", label:"Communication", short:"Comm.",    min:1,  max:10,  step:1,   dec:0}
+  ];
+
+  var PRESETS = [
+    {id:"average",    label:"Average",    v:[7.4,76,1,2,0,255,6]},
+    {id:"borderline", label:"Borderline", v:[7.4,76,1,2,1,255,6]},
+    {id:"strong",     label:"Strong",     v:[8.4,85,2,3,0,400,8]},
+    {id:"risk",       label:"At risk",    v:[6.4,70,0,1,2,150,5]}
+  ];
+
+  var state = { values: PRESETS[0].v.slice(), active: 0 };
+
+  var MINUS = "−";
+  function num(n, d){ if (d === undefined) d = 2; var s = Math.abs(n).toFixed(d); if (Number(s) === 0) return (0).toFixed(d); return (n < 0 ? MINUS : "") + s; }
+  function pyNum(n, d){ var s = n.toFixed(d); return Number(s) === 0 ? (0).toFixed(d) : s; }
+  function pText(p){ var s = p.toFixed(2); if (s === "0.50" || p > 0.99 || p < 0.01) s = p.toFixed(3); return s; }
+  function zText(z){ var s = num(z, 2); if (Number(Math.abs(z).toFixed(2)) === 0) s = num(z, 3); return s; }
+  function paren(s){ return s.charAt(0) === MINUS ? "(" + s + ")" : s; }
+  function valText(v, f){ return v.toFixed(f.dec); }
+  function el(id){ return document.getElementById(id); }
+
+  // round each w*x to 2 dp so that intercept + the shown terms add up exactly to the shown z
+  function balanced(terms, z){
+    var raw = terms.map(function(c){ return c * 100; });
+    var r = raw.map(function(c){ return Math.round(c); });
+    var target = Math.round(z * 100) - Math.round(MODEL.intercept * 100);
+    var diff = target - r.reduce(function(a, b){ return a + b; }, 0);
+    var order = raw.map(function(v, i){ return {i:i, res:v - Math.round(v)}; });
+    order.sort(diff > 0 ? function(a, b){ return b.res - a.res; } : function(a, b){ return a.res - b.res; });
+    for (var k = 0; k < Math.abs(diff) && k < order.length; k++) r[order[k].i] += (diff > 0 ? 1 : -1);
+    return r.map(function(c){ return c / 100; });
+  }
+
+  // ---------- presets + sliders ----------
+  var presetRoot = el("presets");
+  PRESETS.forEach(function(p){
+    var b = document.createElement("button");
+    b.type = "button"; b.id = "preset-" + p.id; b.textContent = p.label; b.setAttribute("aria-pressed", "false");
+    b.addEventListener("click", function(){ state.values = p.v.slice(); syncInputs(); update(); });
+    presetRoot.appendChild(b);
+  });
+
+  var ctlRoot = el("controls");
+  FEATURES.forEach(function(f, i){
+    var d = document.createElement("div");
+    d.className = "ctl"; d.id = "ctl-" + f.key;
+    d.innerHTML =
+      '<div class="ctl-row"><label for="in-' + f.key + '">' + f.label + '<code>' + f.key + '</code></label>' +
+      '<output id="out-' + f.key + '" for="in-' + f.key + '"></output></div>' +
+      '<input type="range" id="in-' + f.key + '" min="' + f.min + '" max="' + f.max + '" step="' + f.step + '" title="' + f.min.toFixed(f.dec) + ' to ' + f.max.toFixed(f.dec) + '">';
+    ctlRoot.appendChild(d);
+    var input = d.querySelector("input");
+    input.addEventListener("input", function(){ state.values[i] = Number(input.value); state.active = i; update(); });
+    input.addEventListener("focus", function(){ if (state.active !== i){ state.active = i; update(); } });
+  });
+
+  function syncInputs(){
+    FEATURES.forEach(function(f, i){ el("in-" + f.key).value = state.values[i]; });
+  }
+
+  // ---------- tables ----------
+  function makeRow(root, id, cells, i){
+    var tr = document.createElement("tr");
+    tr.id = id; tr.tabIndex = 0; tr.innerHTML = cells;
+    function pick(){ state.active = i; update(); }
+    tr.addEventListener("click", pick);
+    tr.addEventListener("keydown", function(e){ if (e.key === "Enter" || e.key === " "){ e.preventDefault(); pick(); } });
+    root.appendChild(tr);
+  }
+  FEATURES.forEach(function(f, i){
+    makeRow(el("rows2"), "r2-" + f.key,
+      '<td>' + f.label + '</td>' +
+      '<td class="num" id="v2-' + f.key + '"></td>' +
+      '<td class="num strong" id="s2-' + f.key + '"></td>', i);
+    makeRow(el("rows3"), "r3-" + f.key,
+      '<td>' + f.label + '</td>' +
+      '<td class="num" id="s3-' + f.key + '"></td>' +
+      '<td class="num" id="w3-' + f.key + '"></td>' +
+      '<td class="num" id="c3-' + f.key + '"></td>' +
+      '<td><div class="bar"><span id="b3-' + f.key + '"></span></div></td>', i);
+  });
+
+  // ---------- chart ----------
+  var X0 = 48, X1 = 544, Y0 = 24, Y1 = 280, ZMAX = 8;
+  function X(z){ return X0 + (z + ZMAX) / (2 * ZMAX) * (X1 - X0); }
+  function Y(p){ return Y0 + (1 - p) * (Y1 - Y0); }
+  (function drawStatic(){
+    var g = "";
+    [0, 0.25, 0.5, 0.75, 1].forEach(function(p){
+      g += '<line class="grid" x1="' + X0 + '" x2="' + X1 + '" y1="' + Y(p) + '" y2="' + Y(p) + '"></line>';
+      g += '<text class="tick" x="' + (X0 - 8) + '" y="' + (Y(p) + 4) + '" text-anchor="end">' + (p === 0 || p === 1 ? p : p.toFixed(2)) + '</text>';
+    });
+    for (var z = -ZMAX; z <= ZMAX; z += 2){
+      g += '<line class="grid" x1="' + X(z) + '" x2="' + X(z) + '" y1="' + Y0 + '" y2="' + Y1 + '"></line>';
+      g += '<text class="tick" x="' + X(z) + '" y="' + (Y1 + 18) + '" text-anchor="middle">' + (z < 0 ? MINUS + Math.abs(z) : z) + '</text>';
+    }
+    g += '<line class="axis" x1="' + X0 + '" x2="' + X1 + '" y1="' + Y1 + '" y2="' + Y1 + '"></line>';
+    g += '<line class="axis" x1="' + X0 + '" x2="' + X0 + '" y1="' + Y0 + '" y2="' + Y1 + '"></line>';
+    g += '<text class="ttl" x="' + ((X0 + X1) / 2) + '" y="318" text-anchor="middle">z (raw score)</text>';
+    g += '<text class="ttl" x="' + (X0 - 8) + '" y="14" text-anchor="end">p</text>';
+    el("grid").innerHTML = g;
+    var d = "";
+    for (var t = -ZMAX; t <= ZMAX + 1e-9; t += 0.1){
+      var p = 1 / (1 + Math.exp(-t));
+      d += (d ? " L" : "M") + X(t).toFixed(1) + " " + Y(p).toFixed(1);
+    }
+    el("curve").setAttribute("d", d);
+  })();
+
+  // ---------- update ----------
+  function update(){
+    var x = state.values;
+    var scaled = x.map(function(v, i){ return (v - MODEL.mean[i]) / MODEL.std[i]; });
+    var wx = scaled.map(function(s, i){ return s * MODEL.coef[i]; });
+    var z = MODEL.intercept + wx.reduce(function(a, b){ return a + b; }, 0);
+    var ez = Math.exp(-z);
+    var p = 1 / (1 + ez);
+    var placed = p >= 0.5;
+    var shown = balanced(wx, z);
+    var zS = zText(z), pS = pText(p);
+
+    PRESETS.forEach(function(pr){
+      var match = pr.v.every(function(v, i){ return Math.abs(v - x[i]) < 1e-9; });
+      el("preset-" + pr.id).setAttribute("aria-pressed", match ? "true" : "false");
+    });
+
+    FEATURES.forEach(function(f, i){
+      var on = i === state.active;
+      el("in-" + f.key).style.setProperty("--pct", ((x[i] - f.min) / (f.max - f.min) * 100) + "%");
+      el("out-" + f.key).textContent = valText(x[i], f);
+      el("ctl-" + f.key).classList.toggle("is-active", on);
+      el("r2-" + f.key).classList.toggle("is-active", on);
+      el("r3-" + f.key).classList.toggle("is-active", on);
+      el("v2-" + f.key).textContent = valText(x[i], f);
+      el("s2-" + f.key).textContent = num(scaled[i]);
+      el("s3-" + f.key).textContent = num(scaled[i]);
+      el("w3-" + f.key).textContent = num(MODEL.coef[i]);
+      var c = el("c3-" + f.key);
+      c.textContent = num(shown[i]);
+      c.className = "num " + (shown[i] > 0 ? "c-pos" : shown[i] < 0 ? "c-neg" : "");
+      var b = el("b3-" + f.key);
+      b.className = shown[i] >= 0 ? "pos" : "neg";
+      var w = Math.min(Math.abs(wx[i]), 2) / 2 * 50;
+      if (shown[i] !== 0 && w < 0.8) w = 0.8;
+      b.style.width = w + "%";
+    });
+
+    // worked lines for the selected feature
+    var a = state.active, fa = FEATURES[a];
+    var cls = shown[a] > 0 ? "pos" : shown[a] < 0 ? "neg" : "";
+    el("w2-lbl").textContent = fa.label;
+    el("w2-lines").innerHTML = '(' + valText(x[a], fa) + ' ' + MINUS + ' ' + num(MODEL.mean[a]) + ') / ' + num(MODEL.std[a]) + ' = <span class="r">' + num(scaled[a]) + '</span>';
+    el("w3-lbl").textContent = fa.label;
+    el("w3-lines").innerHTML = num(MODEL.coef[a]) + ' &times; ' + paren(num(scaled[a])) + ' = <span class="r ' + cls + '">' + num(shown[a]) + '</span>';
+
+    // sum
+    var eq = '<div class="term icpt"><b>' + num(MODEL.intercept) + '</b><small>intercept</small></div>';
+    FEATURES.forEach(function(f, i){
+      var k = shown[i] > 0 ? "pos" : shown[i] < 0 ? "neg" : "";
+      eq += '<span class="op" aria-hidden="true">+</span><div class="term ' + k + '"><b>' + num(shown[i]) + '</b><small>' + f.short + '</small></div>';
+    });
+    eq += '<span class="op" aria-hidden="true">=</span><div class="term total"><b>' + zS + '</b><small>z</small></div>';
+    el("eq").innerHTML = eq;
+    var zn;
+    if (z > 1) zn = 'z = <b>' + zS + '</b> is bigger than 1, so it cannot be a probability. Step 4 fixes that.';
+    else if (z < 0) zn = 'z = <b>' + zS + '</b> is below 0, so it cannot be a probability. Step 4 fixes that.';
+    else zn = 'z = <b>' + zS + '</b> sits between 0 and 1 here, but it is still a raw score. Move a slider and it leaves that range.';
+    el("z-note").innerHTML = zn;
+
+    // sigmoid
+    var ezS = ez >= 1000 ? ez.toFixed(0) : ez.toFixed(2);
+    el("calc").innerHTML =
+      '<span>e<sup>' + num(-z) + '</sup> = ' + ezS + '</span>' +
+      '<span>p = 1 / (1 + ' + ezS + ') = <span class="r">' + pS + '</span></span>';
+
+    var zc = Math.max(-ZMAX, Math.min(ZMAX, z));
+    var cx = X(zc), cy = Y(p);
+    el("dot").style.transform = "translate(" + cx.toFixed(1) + "px," + cy.toFixed(1) + "px)";
+    el("drop-v").setAttribute("x1", cx); el("drop-v").setAttribute("x2", cx); el("drop-v").setAttribute("y1", cy);
+    el("drop-h").setAttribute("x2", cx); el("drop-h").setAttribute("y1", cy); el("drop-h").setAttribute("y2", cy);
+    var lbl = el("dot-l");
+    var off = Math.abs(z) > ZMAX ? " (off chart)" : "";
+    lbl.textContent = "z = " + zS + off + "  →  p = " + pS;
+    var right = cx > 300;
+    lbl.setAttribute("text-anchor", right ? "end" : "start");
+    lbl.setAttribute("x", (right ? cx - 16 : cx + 16).toFixed(1));
+    lbl.setAttribute("y", (cy < 60 ? cy + 28 : cy - 16).toFixed(1));
+    el("chart").setAttribute("aria-label", "Sigmoid curve. z = " + zS + " gives p = " + pS + ".");
+
+    // decision
+    var mf = el("m-fill");
+    mf.style.width = (p * 100) + "%";
+    mf.className = "fill" + (placed ? "" : " no");
+    el("rule").textContent = pS + (placed ? " ≥ " : " < ") + "0.50";
+    var chip = el("chip");
+    chip.textContent = placed ? "Placed (1)" : "Not placed (0)";
+    chip.className = "chip" + (placed ? "" : " no");
+
+    // flow strip
+    el("n3").textContent = "z = " + zS;
+    el("n4").textContent = "p = " + pS;
+    el("n5").textContent = placed ? "Placed (1)" : "Not placed (0)";
+    el("n5box").className = "node live verdict" + (placed ? "" : " no");
+
+    // code
+    var stu = x.map(function(v, i){ return FEATURES[i].dec ? v.toFixed(1) : String(v); }).join(", ");
+    el("code").innerHTML =
+      'print(scaler.mean_.round(2))\n' +
+      '<span class="cm"># [  7.43  76.46   1.03   2.53   0.86 282.     6.17]</span>\n' +
+      'print(scaler.scale_.round(2))\n' +
+      '<span class="cm"># [  0.9    8.85   0.98   1.43   1.39 139.92   1.68]</span>\n' +
+      'print(model.coef_.round(2))\n' +
+      '<span class="cm"># [[ 1.65  0.11  0.47  0.52 -0.9   0.77  0.88]]</span>\n' +
+      'print(model.intercept_.round(2))\n' +
+      '<span class="cm"># [0.48]</span>\n\n' +
+      'student = pd.DataFrame([[<span class="cv">' + stu + '</span>]], columns=X.columns)\n' +
+      'student_scaled = scaler.transform(student)\n' +
+      'print(model.predict_proba(student_scaled).round(2))\n' +
+      '<span class="cm"># [[</span><span class="cv">' + pyNum(1 - p, 2) + ' ' + pyNum(p, 2) + '</span><span class="cm">]]</span>\n' +
+      'print(model.predict(student_scaled))\n' +
+      '<span class="cm"># [</span><span class="cv">' + (placed ? 1 : 0) + '</span><span class="cm">]</span>';
+  }
+
+  syncInputs();
+  update();
+})();
+</script>
+
+</body></html>

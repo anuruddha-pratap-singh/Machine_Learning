@@ -1,0 +1,613 @@
+order_id,city,cuisine,day,order_hour,quantity,distance_km,order_value,delivery_time_min,payment,rating,tip,was_late
+ORD10591,Mumbai,Chinese,Thu,22,3,4.5,519,27,Card,,15.0,No
+ORD10520,Pune,Chinese,Sat,14,1,14.0,295,60,Cash,3.0,15.0,Yes
+ORD10588,Hyderabad,Chinese,Sat,22,3,11.8,744,44,UPI,3.0,,Yes
+ORD10113,Delhi,Desserts,Mon,22,3,5.2,370,36,UPI,5.0,20.0,No
+ORD10322,Delhi,Burger,Fri,14,4,7.2,594,29,UPI,5.0,10.0,No
+ORD10038,Mumbai,Biryani,Sat,13,3,1.5,933,24,Card,,,No
+ORD10066,Hyderabad,South Indian,Mon,17,2,1.3,197,19,Cash,4.0,15.0,No
+ORD10171,Pune,Biryani,Sun,23,5,4.2,1482,28,Cash,5.0,25.0,No
+ORD10003,Bangalore,Biryani,Fri,3,2,12.5,522,51,UPI,4.0,40.0,Yes
+ORD10146,Pune,South Indian,Fri,20,2,14.0,233,48,UPI,3.0,,Yes
+ORD10092,Pune,South Indian,Sat,18,1,0.8,204,9,Cash,5.0,25.0,No
+ORD10090,Hyderabad,South Indian,Sun,14,1,4.0,208,30,UPI,5.0,30.0,No
+ORD10280,Mumbai,Chinese,Fri,13,3,4.0,568,33,UPI,5.0,20.0,No
+ORD10033,Delhi,Pizza,Sun,14,2,0.6,602,21,UPI,5.0,20.0,No
+ORD10390,Pune,Biryani,Sat,1,2,6.0,452,36,UPI,4.0,40.0,No
+ORD10397,Mumbai,Desserts,Sun,22,1,2.5,253,31,UPI,5.0,20.0,No
+ORD10099,Pune,Biryani,Sat,21,6,2.2,1310,20,Card,3.0,,No
+ORD10531,Delhi,Burger,Sun,13,6,4.9,1115,37,UPI,,25.0,No
+ORD10098,Hyderabad,Pizza,Fri,21,2,3.2,511,24,Card,,,No
+ORD10229,Bangalore,Biryani,Sun,1,2,4.8,598,45,Cash,4.0,,Yes
+ORD10211,Pune,South Indian,Wed,13,2,1.9,200,27,Card,5.0,,No
+ORD10222,Bangalore,Chinese,Sat,19,2,13.8,506,63,Card,2.0,50.0,Yes
+ORD10091,Hyderabad,Burger,Mon,18,4,8.3,640,37,UPI,5.0,20.0,No
+ORD10555,Bangalore,Desserts,Sat,20,2,4.0,376,30,UPI,3.0,,No
+ORD10571,Delhi,South Indian,Fri,20,3,2.5,389,16,Card,4.0,,No
+ORD10041,Delhi,South Indian,Sun,22,1,5.2,195,35,Card,,20.0,No
+ORD10598,Mumbai,Desserts,Wed,20,4,7.6,598,35,UPI,3.0,40.0,No
+ORD10374,Bangalore,Biryani,Mon,19,6,0.7,1625,23,UPI,4.0,35.0,No
+ORD10051,Bangalore,Biryani,Sun,19,2,4.0,631,21,Cash,3.0,35.0,No
+ORD10124,Mumbai,Biryani,Sun,19,1,3.3,338,38,Card,5.0,35.0,No
+ORD10095,Bangalore,Chinese,Sat,19,2,2.4,461,28,UPI,4.0,45.0,No
+ORD10078,Hyderabad,Biryani,Thu,17,1,2.7,230,18,Card,4.0,30.0,No
+ORD10055,Bangalore,Chinese,Sun,14,1,3.7,295,34,UPI,5.0,,No
+ORD10565,Mumbai,South Indian,Tue,17,4,4.3,440,31,UPI,4.0,30.0,No
+ORD10073,Delhi,Pizza,Sat,13,2,7.3,668,31,UPI,5.0,,No
+ORD10580,Delhi,Chinese,Wed,13,1,8.8,212,41,UPI,4.0,,Yes
+ORD10117,Pune,South Indian,Sat,13,2,1.9,303,22,UPI,4.0,,No
+ORD10216,Mumbai,Burger,Tue,13,5,2.2,978,29,UPI,3.0,50.0,No
+ORD10061,Bangalore,Burger,Fri,0,2,1.3,354,17,UPI,5.0,50.0,No
+ORD10125,Mumbai,Desserts,Sat,0,3,5.4,573,33,Card,,20.0,No
+ORD10332,Hyderabad,Pizza,Sat,0,8,7.2,1448,32,Cash,4.0,5.0,No
+ORD10238,Delhi,Biryani,Mon,12,2,14.0,644,47,UPI,3.0,,Yes
+ORD10459,Pune,Chinese,Tue,16,2,3.4,406,19,Card,4.0,10.0,No
+ORD10063,Bangalore,South Indian,Fri,18,1,1.2,99,25,UPI,5.0,40.0,No
+ORD10477,Delhi,Burger,Thu,16,2,3.8,333,30,UPI,5.0,,No
+ORD10056,Delhi,Biryani,Wed,0,4,4.7,804,17,UPI,3.0,30.0,No
+ORD10040,Mumbai,South Indian,Thu,20,4,6.9,561,43,UPI,,,Yes
+ORD10589,Mumbai,Chinese,Sat,22,1,1.9,254,24,Card,,20.0,No
+ORD10343,Pune,Chinese,Sat,14,5,5.3,1164,31,UPI,5.0,,No
+ORD10410,Delhi,Pizza,Mon,21,1,,214,17,Card,4.0,10.0,No
+ORD10161,Bangalore,Pizza,Sun,22,6,2.0,1076,28,Cash,4.0,40.0,No
+ORD10156,Pune,Desserts,Mon,21,1,13.6,164,45,UPI,3.0,20.0,Yes
+ORD10160,Delhi,Desserts,Sat,20,1,5.6,262,35,UPI,5.0,,No
+ORD10310,Pune,Desserts,Sun,13,5,3.2,771,31,UPI,3.0,40.0,No
+ORD10018,Mumbai,South Indian,Sat,18,8,14.0,1174,62,Card,3.0,40.0,Yes
+ORD10107,Bangalore,Pizza,Thu,16,2,1.5,507,29,Cash,4.0,25.0,No
+ORD10190,Mumbai,Desserts,Fri,20,3,2.2,467,29,UPI,,,No
+ORD10515,Bangalore,South Indian,Sat,21,3,2.8,520,30,UPI,4.0,35.0,No
+ORD10363,Delhi,Burger,Mon,12,1,2.8,151,24,UPI,4.0,,No
+ORD10193,Bangalore,Biryani,Fri,12,1,5.1,201,23,UPI,5.0,,No
+ORD10574,Bangalore,Desserts,Thu,13,5,4.8,737,24,UPI,5.0,50.0,No
+ORD10298,Pune,Desserts,Sat,21,1,2.4,228,25,UPI,,30.0,No
+ORD10142,Mumbai,Chinese,Thu,14,3,6.9,532,27,UPI,3.0,25.0,No
+ORD10301,Delhi,Pizza,Sat,13,1,3.8,283,28,UPI,5.0,25.0,No
+ORD10317,Mumbai,Burger,Tue,16,2,2.6,375,22,Card,5.0,35.0,No
+ORD10031,Pune,Burger,Wed,22,2,5.0,350,31,Card,4.0,,No
+ORD10176,Pune,Desserts,Fri,0,3,6.1,501,17,Card,4.0,25.0,No
+ORD10568,Delhi,Chinese,Sun,12,4,2.8,937,32,UPI,3.0,,No
+ORD10139,Mumbai,Chinese,Sun,12,2,6.4,518,36,UPI,,,No
+ORD10149,Pune,Pizza,Fri,14,2,0.8,524,20,UPI,4.0,40.0,No
+ORD10420,Bangalore,South Indian,Sun,20,3,5.6,454,36,UPI,4.0,45.0,No
+ORD10582,Pune,South Indian,Sat,18,3,7.1,468,34,UPI,,25.0,No
+ORD10268,Pune,Chinese,Tue,13,2,3.3,402,18,Cash,3.0,15.0,No
+ORD10443,Delhi,Biryani,Fri,21,3,3.5,822,23,UPI,5.0,,No
+ORD10346,Bangalore,South Indian,Wed,19,3,7.6,424,31,Card,5.0,,No
+ORD10424,Delhi,Desserts,Fri,17,5,4.0,757,23,Card,3.0,35.0,No
+ORD10518,Bangalore,South Indian,Thu,22,1,2.6,140,24,UPI,4.0,45.0,No
+ORD10129,Bangalore,Burger,Sat,21,2,2.6,360,30,UPI,3.0,40.0,No
+ORD10408,Delhi,Biryani,Tue,23,3,5.3,759,29,Card,4.0,10.0,No
+ORD10381,Pune,Pizza,Sun,22,3,2.3,757,15,UPI,5.0,25.0,No
+ORD10385,Mumbai,Biryani,Wed,23,2,3.7,553,19,UPI,4.0,30.0,No
+ORD10440,Mumbai,Desserts,Wed,1,2,5.1,310,25,UPI,3.0,40.0,No
+ORD10341,Hyderabad,Biryani,Sat,18,1,5.5,367,38,Card,5.0,,No
+ORD10407,Mumbai,South Indian,Sun,22,2,9.1,287,35,Card,4.0,,No
+ORD10458,Delhi,Biryani,Sat,0,2,3.2,593,15,Cash,,5.0,No
+ORD10271,Pune,South Indian,Sat,22,3,9.7,499,46,Card,2.0,,Yes
+ORD10133,Delhi,Burger,Sat,0,3,4.1,611,30,UPI,3.0,,No
+ORD10370,Pune,South Indian,Thu,14,3,9.0,316,36,Cash,5.0,30.0,No
+ORD10523,Hyderabad,Burger,Sun,19,2,2.2,399,27,Card,4.0,20.0,No
+ORD10166,Pune,Biryani,Fri,2,2,2.8,571,20,UPI,4.0,40.0,No
+ORD10466,Pune,Pizza,Sun,20,6,6.4,1659,31,UPI,5.0,40.0,No
+ORD10140,Delhi,South Indian,Wed,16,4,3.7,503,21,UPI,4.0,20.0,No
+ORD10151,Hyderabad,Desserts,Sat,13,3,3.9,606,26,UPI,4.0,,No
+ORD10513,Hyderabad,Desserts,Fri,20,2,1.6,320,15,Card,5.0,,No
+ORD10048,Pune,Biryani,Thu,13,1,8.1,266,43,Cash,4.0,20.0,Yes
+ORD10196,Bangalore,Pizza,Sat,22,4,0.7,1217,20,UPI,5.0,,No
+ORD10219,Bangalore,Biryani,Wed,23,4,2.9,917,26,Card,4.0,,No
+ORD10455,Mumbai,Desserts,Wed,14,5,4.1,839,24,UPI,4.0,,No
+ORD10519,Bangalore,Chinese,Fri,12,5,4.1,811,35,UPI,4.0,,No
+ORD10573,Bangalore,Biryani,Sun,14,4,0.9,1038,27,UPI,4.0,45.0,No
+ORD10432,Pune,Biryani,Sat,12,2,11.2,724,51,UPI,2.0,,Yes
+ORD10587,Pune,Burger,Sun,21,1,4.0,238,25,UPI,5.0,,No
+ORD10110,Mumbai,Pizza,Thu,17,3,10.2,749,57,Card,,35.0,Yes
+ORD10071,Bangalore,Biryani,Sun,19,1,2.9,308,18,UPI,4.0,45.0,No
+ORD10022,Mumbai,Pizza,Sun,23,4,4.1,1050,28,UPI,,,No
+ORD10504,Mumbai,South Indian,Sun,13,5,5.1,794,36,UPI,,25.0,No
+ORD10302,Mumbai,Pizza,Sun,21,5,3.1,1192,24,UPI,3.0,40.0,No
+ORD10175,Hyderabad,Pizza,Wed,17,2,2.9,575,22,Cash,3.0,5.0,No
+ORD10300,Delhi,Pizza,Sat,19,3,1.6,794,22,Card,4.0,25.0,No
+ORD10064,Pune,Pizza,Wed,19,2,3.9,492,17,Cash,4.0,,No
+ORD10182,Delhi,Biryani,Sat,22,2,5.3,625,35,UPI,,25.0,No
+ORD10549,Bangalore,Burger,Thu,3,6,3.2,1044,24,UPI,5.0,35.0,No
+ORD10005,Mumbai,South Indian,Sun,12,2,2.0,327,36,UPI,4.0,55.0,No
+ORD10147,Pune,Chinese,Sun,19,8,11.4,1845,56,UPI,,,Yes
+ORD10319,Pune,Desserts,Fri,12,2,3.3,293,26,Cash,5.0,30.0,No
+ORD10550,Hyderabad,Biryani,Sat,14,2,2.9,635,21,Cash,,15.0,No
+ORD10179,Delhi,Pizza,Sat,16,2,1.7,528,17,UPI,4.0,30.0,No
+ORD10364,Delhi,Burger,Mon,19,2,4.8,323,29,UPI,3.0,35.0,No
+ORD10314,Hyderabad,Chinese,Thu,19,2,2.1,409,28,Cash,5.0,5.0,No
+ORD10075,Hyderabad,Desserts,Thu,3,5,7.3,637,33,UPI,5.0,,No
+ORD10039,Hyderabad,South Indian,Tue,19,3,4.2,357,23,Card,4.0,,No
+ORD10269,Hyderabad,Pizza,Mon,23,5,1.3,1109,8,Card,4.0,25.0,No
+ORD10256,Delhi,Chinese,Fri,2,2,6.1,394,29,UPI,3.0,30.0,No
+ORD10089,Bangalore,Biryani,Sat,22,3,7.3,880,43,UPI,4.0,,Yes
+ORD10331,Mumbai,Burger,Wed,19,1,3.4,168,31,UPI,5.0,40.0,No
+ORD10007,Hyderabad,Desserts,Sun,13,3,4.3,509,28,Card,4.0,,No
+ORD10599,Hyderabad,Burger,Mon,17,3,1.3,524,18,UPI,4.0,30.0,No
+ORD10409,Pune,South Indian,Sun,14,3,5.2,500,34,UPI,,,No
+ORD10213,Mumbai,Chinese,Sun,14,1,8.3,247,51,UPI,4.0,,Yes
+ORD10584,Bangalore,South Indian,Fri,13,3,1.3,372,23,UPI,4.0,35.0,No
+ORD10399,Bangalore,Chinese,Wed,17,2,3.6,399,29,UPI,4.0,55.0,No
+ORD10369,Hyderabad,Desserts,Sun,20,3,3.1,601,28,Card,5.0,15.0,No
+ORD10186,Bangalore,Burger,Sat,2,2,4.4,429,29,UPI,4.0,35.0,No
+ORD10212,Bangalore,Desserts,Sun,0,5,1.5,736,16,Cash,4.0,35.0,No
+ORD10386,Mumbai,Desserts,Sat,13,1,3.1,231,37,UPI,3.0,,No
+ORD10449,Bangalore,Pizza,Sun,22,2,4.0,490,22,Card,3.0,40.0,No
+ORD10378,Mumbai,Biryani,Wed,12,1,2.1,311,18,Cash,3.0,,No
+ORD10460,Pune,Pizza,Fri,12,5,6.0,1461,32,UPI,5.0,25.0,No
+ORD10167,Hyderabad,South Indian,Wed,12,2,6.2,246,30,Card,5.0,35.0,No
+ORD10027,Pune,Pizza,Wed,22,1,11.1,278,40,Cash,4.0,,No
+ORD10115,Mumbai,Desserts,Mon,21,3,4.8,578,30,Card,4.0,30.0,No
+ORD10489,Delhi,South Indian,Tue,13,6,4.5,679,23,UPI,3.0,20.0,No
+ORD10251,Hyderabad,Biryani,Fri,19,3,2.2,654,24,Card,5.0,30.0,No
+ORD10419,Pune,Pizza,Sat,2,2,3.2,558,29,UPI,4.0,,No
+ORD10480,Delhi,Pizza,Tue,16,2,4.5,533,12,UPI,3.0,,No
+ORD10429,Hyderabad,Biryani,Sun,2,2,6.8,731,29,UPI,3.0,20.0,No
+ORD10106,Pune,Pizza,Wed,2,2,2.0,428,16,Cash,5.0,25.0,No
+ORD10548,Mumbai,Chinese,Thu,21,1,2.8,194,23,Card,4.0,25.0,No
+ORD10259,Hyderabad,Burger,Thu,22,6,5.7,773,33,Card,3.0,,No
+ORD10491,Bangalore,Burger,Sun,18,1,4.9,244,30,UPI,4.0,,No
+ORD10557,Bangalore,Biryani,Wed,1,3,2.7,696,26,Card,4.0,,No
+ORD10281,Delhi,Desserts,Fri,21,2,9.6,298,39,UPI,,15.0,No
+ORD10564,Delhi,South Indian,Mon,12,2,4.1,260,15,UPI,4.0,5.0,No
+ORD10195,Bangalore,Desserts,Sun,1,3,4.6,572,34,Cash,3.0,30.0,No
+ORD10416,Pune,Pizza,Fri,21,1,8.9,265,33,UPI,4.0,35.0,No
+ORD10463,Hyderabad,Pizza,Sat,21,3,2.8,843,20,Card,,40.0,No
+ORD10335,Delhi,Chinese,Tue,20,1,3.7,213,17,UPI,4.0,20.0,No
+ORD10352,Delhi,Chinese,Tue,17,1,0.7,184,21,UPI,5.0,25.0,No
+ORD10258,Hyderabad,Pizza,Sat,0,3,3.5,839,22,UPI,5.0,25.0,No
+ORD10037,Bangalore,Burger,Sat,21,1,2.9,279,24,UPI,5.0,,No
+ORD10019,Mumbai,Burger,Wed,2,1,2.8,176,21,Card,,40.0,No
+ORD10285,Hyderabad,Burger,Wed,20,4,1.0,789,22,UPI,4.0,,No
+ORD10592,Bangalore,Burger,Thu,21,1,2.4,184,28,UPI,4.0,,No
+ORD10228,Hyderabad,Burger,Sat,23,4,7.2,721,39,Card,5.0,30.0,No
+ORD10311,Pune,Biryani,Tue,13,1,8.1,277,44,UPI,2.0,30.0,Yes
+ORD10035,Mumbai,Desserts,Sun,21,2,1.2,322,21,UPI,,25.0,No
+ORD10096,Bangalore,Chinese,Sun,19,8,2.5,1488,32,UPI,5.0,,No
+ORD10499,Pune,Chinese,Sun,12,4,0.5,805,25,Cash,4.0,,No
+ORD10284,Delhi,Burger,Sat,18,5,4.1,966,23,UPI,4.0,30.0,No
+ORD10016,Delhi,Pizza,Sat,17,4,7.7,954,36,UPI,,,No
+ORD10368,Pune,Burger,Tue,14,1,10.6,184,45,Card,3.0,20.0,Yes
+ORD10328,Bangalore,Pizza,Thu,21,1,4.1,270,36,Card,5.0,,No
+ORD10337,Delhi,Pizza,Fri,12,3,5.5,706,39,Cash,4.0,,No
+ORD10232,Pune,Burger,Fri,0,3,1.6,464,9,UPI,4.0,40.0,No
+ORD10401,Pune,South Indian,Sat,21,5,3.0,700,27,Cash,3.0,25.0,No
+ORD10392,Mumbai,Biryani,Sun,22,1,1.5,361,26,Cash,,15.0,No
+ORD10024,Pune,Desserts,Fri,17,5,2.1,731,23,Card,,20.0,No
+ORD10451,Hyderabad,South Indian,Mon,14,2,9.3,209,31,Card,,25.0,No
+ORD10366,Mumbai,Pizza,Sat,21,3,1.9,796,35,UPI,4.0,,No
+ORD10554,Hyderabad,Biryani,Sun,1,2,2.9,547,27,Cash,4.0,25.0,No
+ORD10469,Pune,Pizza,Mon,16,4,4.0,1017,28,UPI,3.0,45.0,No
+ORD10272,Hyderabad,Burger,Sat,21,2,7.1,364,32,UPI,5.0,20.0,No
+ORD10252,Pune,Biryani,Sun,20,1,3.1,342,26,Cash,,,No
+ORD10058,Mumbai,South Indian,Sun,16,3,4.5,397,35,UPI,,40.0,No
+ORD10338,Bangalore,Pizza,Sat,21,1,6.2,291,36,UPI,,,No
+ORD10544,Pune,Chinese,Tue,0,2,4.0,300,26,Cash,,10.0,No
+ORD10072,Mumbai,Pizza,Sun,13,1,1.1,376,18,UPI,5.0,,No
+ORD10144,Mumbai,Chinese,Mon,21,1,4.1,168,31,UPI,3.0,,No
+ORD10485,Pune,Pizza,Mon,13,3,1.6,883,26,Cash,,15.0,No
+ORD10148,Mumbai,South Indian,Tue,14,6,0.8,710,16,Card,5.0,35.0,No
+ORD10353,Pune,Pizza,Wed,17,3,3.5,630,20,UPI,,30.0,No
+ORD10274,Delhi,Biryani,Mon,12,3,13.0,718,47,Cash,,5.0,Yes
+ORD10253,Pune,Pizza,Thu,22,6,2.5,1108,27,Cash,,,No
+ORD10438,Mumbai,Chinese,Tue,20,4,2.2,837,23,UPI,4.0,40.0,No
+ORD10082,Delhi,Chinese,Fri,19,3,0.7,558,22,UPI,4.0,30.0,No
+ORD10127,Delhi,Pizza,Sun,12,2,1.4,593,19,UPI,4.0,15.0,No
+ORD10467,Mumbai,Biryani,Thu,20,4,1.8,1049,24,Card,,,No
+ORD10081,Mumbai,Biryani,Wed,23,4,1.2,1011,18,UPI,4.0,,No
+ORD10447,Delhi,Biryani,Fri,17,4,2.9,1298,17,Card,,,No
+ORD10505,Pune,Chinese,Sat,23,3,8.2,633,34,Card,4.0,,No
+ORD10260,Bangalore,Desserts,Thu,12,5,3.2,782,18,UPI,5.0,45.0,No
+ORD10309,Mumbai,Pizza,Thu,19,1,6.6,225,32,UPI,5.0,35.0,No
+ORD10255,Bangalore,Chinese,Thu,14,2,4.3,381,31,Card,4.0,55.0,No
+ORD10428,Pune,South Indian,Mon,19,8,4.1,1014,30,UPI,4.0,20.0,No
+ORD10278,Pune,Biryani,Sat,0,2,3.4,493,28,Cash,5.0,,No
+ORD10563,Pune,Biryani,Mon,0,3,5.8,827,17,Cash,3.0,,No
+ORD10533,Pune,South Indian,Fri,12,4,11.3,448,52,Cash,3.0,35.0,Yes
+ORD10234,Bangalore,Biryani,Tue,12,1,4.7,260,33,Cash,5.0,,No
+ORD10318,Bangalore,Biryani,Sun,16,2,3.5,587,34,UPI,5.0,70.0,No
+ORD10052,Mumbai,Desserts,Sun,13,4,3.0,632,26,UPI,,,No
+ORD10224,Bangalore,Chinese,Sat,3,1,9.0,253,46,Cash,,20.0,Yes
+ORD10123,Mumbai,Chinese,Sun,13,4,2.2,827,29,UPI,3.0,,No
+ORD10402,Mumbai,Pizza,Mon,13,2,3.3,505,33,UPI,5.0,30.0,No
+ORD10194,Bangalore,Burger,Wed,16,1,2.4,175,29,UPI,4.0,40.0,No
+ORD10236,Mumbai,Burger,Mon,12,1,2.9,199,26,UPI,,20.0,No
+ORD10529,Mumbai,Desserts,Sat,19,1,4.9,223,37,Cash,4.0,20.0,No
+ORD10365,Hyderabad,Chinese,Sun,12,3,1.3,503,20,UPI,5.0,40.0,No
+ORD10475,Mumbai,Desserts,Thu,20,1,8.9,166,39,UPI,3.0,45.0,No
+ORD10525,Mumbai,Pizza,Wed,12,1,1.8,251,27,Cash,4.0,20.0,No
+ORD10556,Hyderabad,Burger,Mon,19,2,1.8,365,20,Cash,4.0,5.0,No
+ORD10371,Mumbai,Chinese,Thu,19,2,,394,24,UPI,5.0,,No
+ORD10277,Pune,Chinese,Mon,1,4,2.8,777,15,UPI,,,No
+ORD10559,Bangalore,Biryani,Mon,12,2,4.2,521,31,UPI,,60.0,No
+ORD10032,Hyderabad,Burger,Fri,3,3,2.6,553,27,UPI,4.0,35.0,No
+ORD10380,Bangalore,Chinese,Sat,18,2,5.7,497,37,UPI,5.0,45.0,No
+ORD10411,Pune,Pizza,Sat,1,4,8.2,1013,36,Card,5.0,20.0,No
+ORD10168,Pune,Biryani,Sun,12,5,2.0,1573,26,Card,,30.0,No
+ORD10201,Delhi,Biryani,Sat,22,4,10.0,901,40,UPI,5.0,15.0,No
+ORD10362,Pune,Biryani,Fri,21,4,4.6,1061,24,UPI,,35.0,No
+ORD10296,Bangalore,Chinese,Sat,20,8,4.7,1343,44,UPI,3.0,,Yes
+ORD10430,Hyderabad,Pizza,Sat,1,1,0.7,308,11,UPI,3.0,30.0,No
+ORD10562,Mumbai,Biryani,Tue,23,4,6.8,1161,39,UPI,,,No
+ORD10551,Hyderabad,Biryani,Fri,14,2,9.4,482,35,Card,5.0,30.0,No
+ORD10218,Hyderabad,South Indian,Sat,16,3,7.7,437,39,UPI,4.0,20.0,No
+ORD10266,Pune,Biryani,Tue,13,2,2.1,545,16,Cash,5.0,15.0,No
+ORD10084,Pune,Pizza,Fri,21,4,4.9,898,30,UPI,5.0,25.0,No
+ORD10379,Pune,South Indian,Wed,16,4,1.3,411,11,Card,,30.0,No
+ORD10045,Pune,Biryani,Wed,2,3,3.6,968,31,UPI,3.0,45.0,No
+ORD10100,Bangalore,Biryani,Sat,23,6,2.8,1687,29,Cash,2.0,30.0,No
+ORD10257,Mumbai,Chinese,Sun,17,3,5.9,655,44,UPI,4.0,40.0,Yes
+ORD10423,Bangalore,South Indian,Wed,12,3,0.8,398,12,UPI,4.0,45.0,No
+ORD10102,Pune,Desserts,Mon,3,2,3.0,301,16,UPI,5.0,25.0,No
+ORD10043,Mumbai,Desserts,Wed,2,2,1.5,361,32,Cash,3.0,10.0,No
+ORD10261,Hyderabad,Biryani,Sat,20,5,0.5,1667,22,UPI,2.0,20.0,No
+ORD10197,Hyderabad,South Indian,Thu,12,1,8.7,124,40,UPI,4.0,,No
+ORD10270,Bangalore,South Indian,Fri,16,3,7.2,324,48,Cash,4.0,35.0,Yes
+ORD10014,Delhi,Biryani,Sat,13,6,2.3,1618,22,UPI,3.0,,No
+ORD10221,Mumbai,South Indian,Wed,13,1,3.0,125,31,Card,4.0,15.0,No
+ORD10462,Bangalore,Biryani,Sun,2,4,3.4,943,22,UPI,,,No
+ORD10446,Pune,Biryani,Fri,20,2,5.2,514,38,UPI,5.0,,No
+ORD10120,Bangalore,Biryani,Mon,1,4,1.6,1170,19,UPI,,,No
+ORD10503,Hyderabad,South Indian,Thu,21,4,1.0,512,14,Cash,4.0,,No
+ORD10360,Bangalore,South Indian,Wed,12,2,7.6,235,39,Cash,4.0,,No
+ORD10108,Hyderabad,Chinese,Fri,13,3,0.9,586,20,UPI,4.0,10.0,No
+ORD10070,Mumbai,Chinese,Wed,18,2,8.5,421,35,Cash,,,No
+ORD10069,Delhi,Desserts,Sun,1,1,6.6,213,24,Card,5.0,,No
+ORD10293,Hyderabad,Burger,Thu,23,3,1.8,566,18,UPI,,10.0,No
+ORD10173,Bangalore,South Indian,Sat,14,5,4.1,664,37,Card,4.0,30.0,No
+ORD10150,Mumbai,Desserts,Sun,16,2,3.5,366,32,UPI,5.0,,No
+ORD10237,Mumbai,Chinese,Sun,20,2,3.1,496,36,UPI,3.0,35.0,No
+ORD10585,Mumbai,Biryani,Sat,13,5,3.8,1426,25,UPI,5.0,45.0,No
+ORD10540,Bangalore,Chinese,Wed,20,3,3.6,526,23,UPI,3.0,,No
+ORD10181,Delhi,South Indian,Sat,21,6,0.5,734,21,Card,,5.0,No
+ORD10101,Delhi,Chinese,Thu,23,3,1.4,614,9,Card,4.0,30.0,No
+ORD10290,Delhi,Biryani,Fri,21,3,9.6,899,36,UPI,4.0,20.0,No
+ORD10128,Delhi,Burger,Sat,23,4,1.6,761,36,UPI,5.0,5.0,No
+ORD10431,Bangalore,Chinese,Wed,18,1,2.4,199,18,Card,5.0,50.0,No
+ORD10521,Delhi,Pizza,Sat,2,6,1.7,1322,20,Cash,4.0,,No
+ORD10104,Mumbai,Biryani,Fri,3,6,2.4,1741,19,Card,4.0,45.0,No
+ORD10289,Bangalore,South Indian,Sat,19,6,2.7,945,29,UPI,4.0,55.0,No
+ORD10247,Bangalore,South Indian,Fri,1,1,7.0,125,38,UPI,5.0,,No
+ORD10448,Pune,South Indian,Mon,20,6,2.1,775,18,UPI,5.0,35.0,No
+ORD10121,Bangalore,Pizza,Sun,16,3,1.6,814,19,Card,5.0,35.0,No
+ORD10077,Pune,Chinese,Thu,12,4,3.8,644,28,Card,4.0,35.0,No
+ORD10054,Bangalore,Burger,Fri,21,4,4.7,551,33,UPI,4.0,40.0,No
+ORD10230,Hyderabad,Burger,Thu,0,3,5.8,481,33,UPI,3.0,,No
+ORD10347,Bangalore,Pizza,Thu,0,3,6.8,741,41,UPI,4.0,30.0,Yes
+ORD10111,Bangalore,Burger,Mon,1,8,7.7,1131,38,UPI,4.0,45.0,No
+ORD10008,Pune,Pizza,Wed,22,1,3.0,268,16,UPI,4.0,20.0,No
+ORD10026,Mumbai,Burger,Sat,21,8,6.8,1487,53,Cash,3.0,10.0,Yes
+ORD10288,Hyderabad,Pizza,Thu,0,5,8.5,1136,39,Card,5.0,,No
+ORD10326,Delhi,Chinese,Sat,21,2,3.5,558,30,Cash,5.0,30.0,No
+ORD10393,Bangalore,Chinese,Sat,14,2,6.2,373,42,UPI,3.0,45.0,Yes
+ORD10340,Hyderabad,South Indian,Thu,13,2,3.2,263,29,UPI,,10.0,No
+ORD10208,Pune,Biryani,Sun,16,2,0.9,512,25,Cash,4.0,,No
+ORD10461,Hyderabad,Biryani,Sun,21,3,3.0,1063,31,UPI,4.0,35.0,No
+ORD10021,Bangalore,Chinese,Sat,17,3,4.9,783,45,Card,,,Yes
+ORD10530,Hyderabad,Chinese,Fri,21,3,4.6,558,21,Card,5.0,30.0,No
+ORD10010,Mumbai,Pizza,Sat,22,3,2.3,794,20,UPI,2.0,,No
+ORD10433,Pune,Chinese,Mon,18,3,3.7,529,19,UPI,,,No
+ORD10350,Delhi,Pizza,Wed,14,4,5.8,1039,38,Cash,4.0,,No
+ORD10492,Bangalore,Desserts,Thu,20,5,5.5,771,34,UPI,4.0,,No
+ORD10345,Delhi,South Indian,Mon,13,4,5.1,336,35,UPI,5.0,20.0,No
+ORD10545,Delhi,Desserts,Sat,12,1,1.2,255,17,UPI,4.0,25.0,No
+ORD10189,Delhi,Burger,Mon,1,2,1.9,246,15,UPI,5.0,,No
+ORD10163,Mumbai,Chinese,Fri,13,5,5.5,860,32,UPI,,,No
+ORD10415,Mumbai,Desserts,Thu,23,1,6.5,146,36,Card,3.0,20.0,No
+ORD10346,Bangalore,South Indian,Wed,19,3,7.6,424,31,Card,5.0,,No
+ORD10217,Mumbai,Biryani,Sat,22,1,6.2,353,28,UPI,5.0,30.0,No
+ORD10476,Delhi,Pizza,Mon,19,1,3.0,163,27,UPI,5.0,25.0,No
+ORD10457,Hyderabad,Pizza,Sat,12,2,3.1,621,24,UPI,3.0,,No
+ORD10528,Hyderabad,South Indian,Sun,13,1,0.9,212,27,UPI,4.0,35.0,No
+ORD10097,Bangalore,Chinese,Sat,12,3,3.0,654,24,Card,5.0,40.0,No
+ORD10245,Pune,Chinese,Sat,20,3,5.2,603,42,Card,3.0,,Yes
+ORD10486,Hyderabad,Chinese,Sat,21,3,6.6,694,28,UPI,3.0,,No
+ORD10015,Bangalore,Chinese,Sun,14,1,6.0,314,42,UPI,2.0,35.0,Yes
+ORD10243,Hyderabad,Chinese,Mon,12,4,4.6,685,21,UPI,,,No
+ORD10413,Hyderabad,Biryani,Thu,17,5,3.4,1166,17,Cash,3.0,10.0,No
+ORD10323,Mumbai,Biryani,Sun,23,1,4.2,376,31,Cash,5.0,,No
+ORD10422,Mumbai,Desserts,Sun,23,3,2.3,563,27,UPI,5.0,35.0,No
+ORD10481,Pune,Biryani,Sun,1,1,2.5,359,31,Card,3.0,40.0,No
+ORD10507,Mumbai,South Indian,Thu,20,4,7.6,547,40,UPI,4.0,,No
+ORD10164,Delhi,Burger,Sat,3,1,2.1,285,22,Card,,,No
+ORD10453,Pune,Biryani,Sun,22,1,4.6,350,33,UPI,,30.0,No
+ORD10391,Delhi,Biryani,Wed,22,1,3.4,292,23,Card,5.0,15.0,No
+ORD10287,Delhi,South Indian,Thu,13,3,2.7,355,17,UPI,,,No
+ORD10250,Pune,South Indian,Mon,22,1,7.0,130,22,UPI,3.0,35.0,No
+ORD10265,Bangalore,Chinese,Sat,19,5,4.2,1080,30,UPI,4.0,,No
+ORD10377,Hyderabad,Biryani,Sun,19,2,3.3,714,22,UPI,5.0,,No
+ORD10294,Mumbai,Desserts,Sun,3,4,1.9,764,26,Cash,4.0,15.0,No
+ORD10388,Hyderabad,Pizza,Sun,16,5,3.7,1232,22,UPI,5.0,,No
+ORD10295,Delhi,Chinese,Sat,13,4,4.9,899,22,UPI,5.0,,No
+ORD10233,Hyderabad,Desserts,Thu,20,4,0.5,660,16,Cash,4.0,,No
+ORD10552,Pune,South Indian,Sat,2,2,0.5,343,17,Card,4.0,30.0,No
+ORD10547,Pune,South Indian,Fri,20,3,3.6,288,29,UPI,4.0,,No
+ORD10305,Pune,Pizza,Mon,23,1,1.2,288,8,UPI,3.0,30.0,No
+ORD10541,Bangalore,Chinese,Wed,1,2,0.6,447,15,Cash,3.0,,No
+ORD10512,Bangalore,Chinese,Sun,21,5,1.2,1041,17,Card,4.0,30.0,No
+ORD10172,Mumbai,Pizza,Sat,19,2,1.7,575,25,UPI,5.0,25.0,No
+ORD10158,Mumbai,Chinese,Sun,22,2,4.2,506,33,UPI,4.0,40.0,No
+ORD10384,Pune,Pizza,Tue,0,3,6.6,623,26,UPI,4.0,,No
+ORD10308,Mumbai,Chinese,Sun,13,2,1.4,446,28,Cash,4.0,,No
+ORD10405,Pune,Biryani,Sat,13,4,7.7,1178,38,UPI,3.0,20.0,No
+ORD10497,Bangalore,Desserts,Sun,2,5,8.0,815,44,Card,2.0,50.0,Yes
+ORD10524,Bangalore,Pizza,Tue,20,2,1.1,452,29,UPI,5.0,55.0,No
+ORD10465,Pune,Biryani,Sat,18,4,2.1,1255,30,UPI,5.0,45.0,No
+ORD10344,Bangalore,Chinese,Mon,21,2,2.6,389,27,UPI,4.0,30.0,No
+ORD10358,Bangalore,Pizza,Sun,14,5,1.7,1450,27,UPI,5.0,,No
+ORD10157,Delhi,South Indian,Sat,16,2,9.7,365,39,Card,,10.0,No
+ORD10180,Mumbai,South Indian,Sun,14,1,2.2,168,36,UPI,3.0,25.0,No
+ORD10153,Bangalore,South Indian,Sun,20,3,8.4,519,36,UPI,,40.0,No
+ORD10152,Mumbai,Pizza,Tue,17,5,3.0,1344,22,UPI,,35.0,No
+ORD10079,Pune,Pizza,Mon,14,3,5.4,900,29,UPI,4.0,,No
+ORD10546,Bangalore,South Indian,Sat,21,2,1.5,350,29,UPI,5.0,,No
+ORD10141,Bangalore,South Indian,Sun,18,2,2.0,347,30,Card,4.0,45.0,No
+ORD10494,Delhi,Biryani,Wed,14,2,0.7,541,10,UPI,5.0,25.0,No
+ORD10472,Delhi,South Indian,Sun,20,1,,209,17,Cash,4.0,,No
+ORD10093,Hyderabad,Pizza,Sat,19,1,8.6,343,49,UPI,3.0,,Yes
+ORD10539,Delhi,Biryani,Fri,12,3,4.9,686,23,Card,5.0,15.0,No
+ORD10579,Pune,South Indian,Mon,22,2,4.3,246,25,Card,3.0,20.0,No
+ORD10320,Pune,Pizza,Sat,16,3,7.6,911,31,UPI,3.0,45.0,No
+ORD10132,Delhi,Biryani,Sat,3,4,12.3,1175,45,UPI,5.0,20.0,Yes
+ORD10198,Pune,Pizza,Sat,20,3,2.3,701,27,Cash,3.0,25.0,No
+ORD10412,Hyderabad,Pizza,Wed,21,4,6.9,907,38,Card,4.0,15.0,No
+ORD10583,Pune,Chinese,Thu,21,1,4.6,167,29,UPI,3.0,20.0,No
+ORD10105,Delhi,Burger,Wed,23,3,3.8,570,22,UPI,3.0,,No
+ORD10586,Bangalore,Chinese,Thu,19,1,1.8,176,20,Card,4.0,50.0,No
+ORD10517,Bangalore,Burger,Tue,2,2,3.1,311,22,UPI,3.0,40.0,No
+ORD10594,Pune,Biryani,Mon,2,4,6.6,1150,28,UPI,5.0,20.0,No
+ORD10200,Mumbai,Biryani,Wed,3,1,4.0,201,30,UPI,5.0,40.0,No
+ORD10357,Mumbai,Desserts,Sat,14,5,5.0,816,44,UPI,3.0,,Yes
+ORD10558,Pune,South Indian,Fri,21,3,0.7,398,15,Cash,,5.0,No
+ORD10442,Bangalore,Pizza,Fri,14,1,7.0,226,38,Card,4.0,45.0,No
+ORD10514,Pune,Pizza,Sat,14,2,0.6,538,20,Card,5.0,40.0,No
+ORD10575,Mumbai,Pizza,Sat,22,2,1.2,729,29,Card,5.0,,No
+ORD10134,Hyderabad,Chinese,Mon,20,4,2.3,758,27,Card,5.0,30.0,No
+ORD10119,Pune,Burger,Sat,20,4,0.8,685,11,UPI,4.0,20.0,No
+ORD10303,Pune,Biryani,Thu,20,8,3.9,1944,23,Card,4.0,40.0,No
+ORD10135,Pune,Pizza,Tue,14,2,2.2,385,25,Card,5.0,30.0,No
+ORD10439,Mumbai,South Indian,Sat,13,3,3.8,433,32,Card,5.0,25.0,No
+ORD10450,Bangalore,Burger,Sun,23,4,3.9,837,35,UPI,3.0,35.0,No
+ORD10536,Pune,Biryani,Mon,22,1,2.0,241,23,Card,4.0,,No
+ORD10425,Mumbai,Desserts,Wed,2,8,3.2,1348,23,UPI,4.0,45.0,No
+ORD10006,Delhi,Biryani,Fri,19,2,9.0,533,37,Card,,,No
+ORD10279,Mumbai,Biryani,Wed,3,1,1.8,244,34,UPI,5.0,,No
+ORD10417,Delhi,Pizza,Sat,16,2,1.2,577,24,UPI,5.0,20.0,No
+ORD10283,Pune,Pizza,Sun,3,3,6.0,861,34,UPI,,35.0,No
+ORD10316,Pune,Burger,Tue,14,4,1.7,840,23,Cash,4.0,5.0,No
+ORD10196,Bangalore,Pizza,Sat,22,4,0.7,1217,20,UPI,5.0,,No
+ORD10116,Pune,Pizza,Fri,23,2,4.7,443,18,Card,5.0,40.0,No
+ORD10509,Mumbai,Biryani,Fri,20,1,8.4,333,44,UPI,4.0,35.0,Yes
+ORD10076,Bangalore,Chinese,Mon,20,1,2.9,182,17,Cash,,35.0,No
+ORD10484,Bangalore,Desserts,Mon,17,3,10.2,493,46,UPI,2.0,30.0,Yes
+ORD10454,Delhi,Burger,Fri,3,3,2.4,597,21,UPI,5.0,15.0,No
+ORD10532,Hyderabad,Biryani,Sun,18,2,1.7,632,20,UPI,3.0,35.0,No
+ORD10334,Delhi,Biryani,Sun,12,3,5.7,879,37,UPI,3.0,15.0,No
+ORD10209,Hyderabad,Biryani,Sun,22,2,0.5,571,29,Card,,10.0,No
+ORD10207,Pune,Pizza,Sat,16,5,2.4,1383,28,UPI,5.0,30.0,No
+ORD10074,Hyderabad,Biryani,Fri,22,6,4.3,1895,29,Cash,5.0,,No
+ORD10009,Bangalore,Biryani,Fri,18,2,1.9,626,28,UPI,4.0,,No
+ORD10223,Bangalore,Pizza,Tue,19,3,4.1,635,22,Card,5.0,40.0,No
+ORD10046,Bangalore,Biryani,Fri,3,5,1.8,1112,29,Cash,5.0,45.0,No
+ORD10263,Mumbai,Biryani,Tue,21,3,6.0,740,35,UPI,4.0,40.0,No
+ORD10028,Bangalore,Burger,Sat,14,2,5.7,426,31,UPI,3.0,50.0,No
+ORD10004,Mumbai,Pizza,Thu,22,3,4.7,791,46,UPI,2.0,50.0,Yes
+ORD10324,Delhi,Chinese,Sun,20,3,4.0,711,26,UPI,,,No
+ORD10017,Mumbai,Pizza,Fri,14,2,3.9,472,36,Card,4.0,35.0,No
+ORD10240,Mumbai,South Indian,Sat,13,1,6.1,184,37,UPI,,40.0,No
+ORD10042,Mumbai,Desserts,Thu,1,1,1.4,158,27,Cash,4.0,40.0,No
+ORD10177,Hyderabad,South Indian,Sat,19,4,7.8,529,47,Cash,3.0,,Yes
+ORD10273,Hyderabad,Biryani,Sat,12,1,1.4,335,20,Card,,35.0,No
+ORD10156,Pune,Desserts,Mon,21,1,13.6,164,45,UPI,3.0,20.0,Yes
+ORD10479,Mumbai,South Indian,Tue,14,2,3.9,251,21,UPI,5.0,30.0,No
+ORD10080,Mumbai,Biryani,Mon,20,2,8.2,529,40,Cash,5.0,,No
+ORD10403,Mumbai,Chinese,Sat,14,6,2.6,1150,32,UPI,,45.0,No
+ORD10165,Mumbai,Biryani,Sun,20,2,2.7,603,26,UPI,5.0,40.0,No
+ORD10060,Delhi,Desserts,Sun,22,5,3.0,896,26,UPI,5.0,30.0,No
+ORD10426,Pune,South Indian,Tue,22,1,2.3,137,30,Card,,35.0,No
+ORD10394,Mumbai,Biryani,Sat,20,3,4.2,771,33,UPI,3.0,35.0,No
+ORD10483,Pune,Burger,Fri,2,4,4.4,646,24,UPI,4.0,,No
+ORD10526,Delhi,South Indian,Mon,20,4,1.1,503,14,UPI,4.0,10.0,No
+ORD10184,Hyderabad,Pizza,Fri,18,1,1.1,247,16,UPI,4.0,30.0,No
+ORD10321,Hyderabad,Burger,Thu,12,3,2.8,462,27,Cash,5.0,,No
+ORD10178,Pune,Pizza,Fri,19,1,6.3,267,36,UPI,,35.0,No
+ORD10543,Delhi,Desserts,Sun,21,3,2.0,637,21,Card,4.0,,No
+ORD10094,Delhi,Biryani,Thu,13,2,3.0,499,26,UPI,4.0,30.0,No
+ORD10169,Pune,Pizza,Mon,2,3,5.1,798,39,Card,4.0,,No
+ORD10202,Bangalore,Burger,Sat,2,1,10.3,266,42,UPI,,30.0,Yes
+ORD10083,Bangalore,Desserts,Sat,20,4,6.9,630,33,Card,4.0,40.0,No
+ORD10470,Mumbai,Biryani,Fri,20,2,,519,25,UPI,4.0,,No
+ORD10159,Pune,Pizza,Sun,22,1,3.0,337,32,UPI,2.0,25.0,No
+ORD10086,Bangalore,Chinese,Sat,22,3,3.6,640,30,UPI,4.0,45.0,No
+ORD10192,Bangalore,Pizza,Fri,22,2,1.4,500,27,Card,2.0,45.0,No
+ORD10154,Pune,Biryani,Wed,12,5,4.3,1261,18,Card,5.0,30.0,No
+ORD10155,Delhi,South Indian,Mon,17,5,2.1,669,17,UPI,,20.0,No
+ORD10131,Hyderabad,Burger,Fri,1,2,2.8,394,14,UPI,5.0,30.0,No
+ORD10406,Delhi,South Indian,Tue,20,8,1.7,939,17,Card,,35.0,No
+ORD10398,Delhi,Desserts,Wed,12,3,4.2,494,20,UPI,5.0,15.0,No
+ORD10373,Delhi,Chinese,Sun,14,3,6.9,644,38,UPI,,10.0,No
+ORD10596,Pune,Chinese,Sat,21,8,0.6,1437,21,UPI,,25.0,No
+ORD10445,Mumbai,Biryani,Sun,14,3,2.6,801,35,Cash,4.0,15.0,No
+ORD10011,Hyderabad,Biryani,Sun,23,3,2.2,781,13,UPI,4.0,35.0,No
+ORD10087,Bangalore,South Indian,Sun,21,3,1.8,434,24,UPI,4.0,45.0,No
+ORD10036,Hyderabad,South Indian,Sun,14,1,2.0,208,27,Cash,3.0,,No
+ORD10581,Delhi,Desserts,Tue,12,2,4.7,334,31,Card,,10.0,No
+ORD10214,Mumbai,Pizza,Wed,21,6,3.6,1334,33,UPI,5.0,30.0,No
+ORD10382,Bangalore,Pizza,Sat,19,3,0.5,883,20,UPI,5.0,25.0,No
+ORD10029,Mumbai,Desserts,Sun,20,1,2.5,263,22,UPI,5.0,40.0,No
+ORD10595,Pune,Biryani,Tue,0,3,8.0,751,29,Card,5.0,15.0,No
+ORD10312,Hyderabad,Biryani,Wed,0,3,4.5,678,16,UPI,,,No
+ORD10304,Bangalore,Biryani,Thu,0,2,0.9,389,13,UPI,4.0,50.0,No
+ORD10118,Bangalore,Desserts,Sat,0,3,1.6,453,28,Cash,5.0,40.0,No
+ORD10108,Hyderabad,Chinese,Fri,13,3,0.9,586,20,UPI,4.0,10.0,No
+ORD10199,Mumbai,South Indian,Wed,20,4,1.6,486,24,Cash,4.0,25.0,No
+ORD10259,Hyderabad,Burger,Thu,22,6,5.7,773,33,Card,3.0,,No
+ORD10282,Pune,Biryani,Sat,13,2,3.9,610,21,UPI,4.0,,No
+ORD10053,Mumbai,Pizza,Fri,1,1,1.1,238,12,UPI,5.0,45.0,No
+ORD10490,Pune,Biryani,Sat,13,2,4.2,565,23,UPI,5.0,,No
+ORD10354,Mumbai,South Indian,Fri,20,8,8.8,893,46,Card,2.0,35.0,Yes
+ORD10030,Mumbai,South Indian,Thu,12,4,2.6,432,16,Card,5.0,20.0,No
+ORD10336,Mumbai,South Indian,Sat,17,2,6.0,307,37,UPI,5.0,50.0,No
+ORD10436,Pune,Pizza,Sat,17,1,5.0,312,36,UPI,5.0,30.0,No
+ORD10012,Hyderabad,Pizza,Mon,0,6,8.0,1466,31,UPI,5.0,20.0,No
+ORD10143,Pune,South Indian,Sat,22,5,3.0,793,18,UPI,5.0,30.0,No
+ORD10395,Bangalore,Burger,Tue,0,1,3.7,165,27,UPI,4.0,45.0,No
+ORD10538,Pune,South Indian,Sat,20,5,8.6,622,34,UPI,5.0,20.0,No
+ORD10542,Hyderabad,Desserts,Sun,20,1,4.9,241,33,UPI,5.0,20.0,No
+ORD10286,Hyderabad,South Indian,Wed,12,4,4.4,450,25,UPI,,25.0,No
+ORD10510,Delhi,Pizza,Tue,3,2,1.4,566,9,Cash,5.0,5.0,No
+ORD10068,Mumbai,Chinese,Sun,21,8,2.0,1773,33,Cash,5.0,,No
+ORD10516,Hyderabad,Biryani,Thu,23,3,2.4,846,16,Cash,3.0,,No
+ORD10339,Hyderabad,South Indian,Thu,20,2,14.0,220,59,Card,4.0,45.0,Yes
+ORD10325,Bangalore,Pizza,Fri,19,1,1.4,219,25,Card,,,No
+ORD10452,Pune,Burger,Thu,3,1,7.8,141,31,Card,5.0,35.0,No
+ORD10376,Pune,Biryani,Thu,16,2,4.5,464,26,Cash,5.0,,No
+ORD10330,Delhi,Biryani,Fri,3,2,2.5,471,19,UPI,,20.0,No
+ORD10299,Bangalore,Chinese,Sat,17,3,0.8,642,24,UPI,,40.0,No
+ORD10315,Hyderabad,Pizza,Fri,13,4,3.9,959,21,Card,4.0,25.0,No
+ORD10249,Pune,Biryani,Sun,3,3,7.3,933,32,UPI,4.0,25.0,No
+ORD10474,Hyderabad,Pizza,Sun,13,6,12.4,1545,51,Card,3.0,35.0,Yes
+ORD10264,Delhi,Chinese,Fri,19,1,1.2,221,12,UPI,4.0,,No
+ORD10434,Hyderabad,Biryani,Sat,12,3,4.5,1047,23,UPI,4.0,,No
+ORD10387,Mumbai,Burger,Tue,21,2,1.6,352,20,UPI,4.0,40.0,No
+ORD10306,Mumbai,Chinese,Sun,14,6,1.6,1460,26,UPI,4.0,30.0,No
+ORD10342,Hyderabad,Chinese,Sun,22,2,5.1,532,36,Cash,4.0,15.0,No
+ORD10020,Pune,Chinese,Mon,18,1,3.8,181,19,Cash,4.0,30.0,No
+ORD10482,Mumbai,Biryani,Thu,21,8,12.3,2114,48,Card,,35.0,Yes
+ORD10122,Hyderabad,Burger,Sat,3,3,4.0,494,32,Card,5.0,,No
+ORD10496,Delhi,Chinese,Wed,16,4,7.8,821,29,Card,3.0,10.0,No
+ORD10500,Pune,Chinese,Mon,21,5,5.0,996,25,UPI,4.0,,No
+ORD10137,Delhi,Pizza,Wed,22,1,1.0,252,8,UPI,,20.0,No
+ORD10488,Bangalore,South Indian,Wed,19,2,1.9,254,20,Cash,5.0,20.0,No
+ORD10203,Pune,South Indian,Sat,19,4,2.9,606,18,Card,4.0,35.0,No
+ORD10085,Pune,Chinese,Fri,19,5,2.7,1011,28,UPI,5.0,25.0,No
+ORD10593,Hyderabad,South Indian,Sat,17,4,7.5,458,46,UPI,3.0,25.0,Yes
+ORD10114,Pune,South Indian,Sun,18,5,1.8,728,21,Card,5.0,15.0,No
+ORD10185,Mumbai,Desserts,Wed,19,5,6.5,861,40,Card,3.0,20.0,No
+ORD10044,Delhi,Burger,Mon,19,1,12.3,203,45,Card,,20.0,Yes
+ORD10506,Mumbai,Biryani,Sat,17,2,7.7,455,37,UPI,4.0,30.0,No
+ORD10495,Delhi,South Indian,Tue,20,1,1.0,116,16,UPI,3.0,15.0,No
+ORD10534,Hyderabad,South Indian,Sat,19,3,0.7,484,32,UPI,4.0,40.0,No
+ORD10062,Mumbai,Chinese,Sat,20,3,1.6,576,21,UPI,2.0,40.0,No
+ORD10088,Bangalore,Desserts,Thu,17,2,1.0,294,17,Card,,,No
+ORD10567,Hyderabad,South Indian,Thu,14,6,1.1,656,24,UPI,3.0,30.0,No
+ORD10227,Bangalore,Pizza,Thu,22,3,2.4,831,27,UPI,3.0,40.0,No
+ORD10471,Mumbai,Burger,Mon,13,6,6.2,1046,41,UPI,4.0,35.0,Yes
+ORD10292,Mumbai,Chinese,Sat,21,1,8.5,251,57,Cash,3.0,30.0,Yes
+ORD10213,Mumbai,Chinese,Sun,14,1,8.3,247,51,UPI,4.0,,Yes
+ORD10112,Mumbai,Chinese,Sun,0,1,10.7,281,45,UPI,,25.0,Yes
+ORD10034,Bangalore,Biryani,Sat,20,5,2.6,1367,28,UPI,4.0,40.0,No
+ORD10174,Hyderabad,Chinese,Fri,19,8,5.2,1627,24,Cash,3.0,15.0,No
+ORD10001,Pune,Biryani,Fri,21,3,6.0,851,28,Card,5.0,35.0,No
+ORD10427,Mumbai,Pizza,Sat,14,5,2.0,1313,31,UPI,5.0,50.0,No
+ORD10136,Bangalore,Biryani,Thu,20,2,4.5,503,25,Card,4.0,45.0,No
+ORD10466,Pune,Pizza,Sun,20,6,6.4,1659,31,UPI,5.0,40.0,No
+ORD10112,Mumbai,Chinese,Sun,0,1,10.7,281,45,UPI,,25.0,Yes
+ORD10359,Mumbai,Biryani,Wed,20,3,2.6,689,23,UPI,4.0,15.0,No
+ORD10025,Mumbai,Biryani,Sat,22,4,4.6,1029,32,Card,4.0,15.0,No
+ORD10597,Delhi,Pizza,Thu,23,1,9.3,297,26,UPI,5.0,,No
+ORD10226,Mumbai,Biryani,Fri,23,3,3.4,796,31,UPI,4.0,35.0,No
+ORD10327,Mumbai,Pizza,Mon,18,1,4.6,229,27,UPI,5.0,30.0,No
+ORD10561,Hyderabad,Pizza,Wed,13,3,5.0,460,22,UPI,3.0,30.0,No
+ORD10191,Pune,Burger,Mon,14,2,2.8,312,21,Cash,5.0,,No
+ORD10522,Hyderabad,South Indian,Mon,21,2,6.3,270,25,UPI,4.0,25.0,No
+ORD10244,Bangalore,Biryani,Tue,0,2,7.7,510,31,Card,5.0,50.0,No
+ORD10267,Bangalore,Desserts,Sat,14,4,3.5,834,32,UPI,,50.0,No
+ORD10530,Hyderabad,Chinese,Fri,21,3,4.6,558,21,Card,5.0,30.0,No
+ORD10049,Delhi,South Indian,Sat,18,6,5.9,883,39,UPI,5.0,20.0,No
+ORD10205,Delhi,Pizza,Tue,20,3,3.2,830,23,UPI,3.0,15.0,No
+ORD10103,Bangalore,Burger,Sun,1,2,3.9,405,33,UPI,5.0,50.0,No
+ORD10067,Pune,Biryani,Wed,0,3,3.0,949,24,Card,4.0,30.0,No
+ORD10023,Delhi,Pizza,Sun,20,4,2.5,1069,17,Cash,4.0,15.0,No
+ORD10590,Mumbai,Pizza,Tue,12,4,1.5,1040,29,Cash,5.0,25.0,No
+ORD10464,Bangalore,South Indian,Sat,12,3,1.4,424,23,UPI,3.0,35.0,No
+ORD10511,Mumbai,Chinese,Sun,13,2,2.4,448,36,UPI,,30.0,No
+ORD10333,Mumbai,Pizza,Wed,21,5,5.0,1346,32,Card,,30.0,No
+ORD10351,Pune,Burger,Fri,16,2,1.4,351,22,UPI,3.0,40.0,No
+ORD10254,Hyderabad,Biryani,Wed,13,6,4.0,1678,31,Card,4.0,,No
+ORD10468,Delhi,Burger,Mon,14,3,,471,44,UPI,5.0,10.0,Yes
+ORD10470,Mumbai,Biryani,Fri,20,2,,519,25,UPI,4.0,,No
+ORD10162,Mumbai,Chinese,Sun,21,5,,1011,31,UPI,5.0,40.0,No
+ORD10375,Hyderabad,Desserts,Fri,20,2,1.6,304,18,Card,5.0,25.0,No
+ORD10065,Hyderabad,Chinese,Sun,12,2,2.6,480,29,UPI,3.0,35.0,No
+ORD10421,Pune,Pizza,Thu,19,3,0.5,584,11,UPI,4.0,20.0,No
+ORD10204,Delhi,South Indian,Thu,13,3,3.4,373,25,UPI,4.0,,No
+ORD10527,Hyderabad,Chinese,Fri,20,3,2.0,599,17,Card,4.0,25.0,No
+ORD10570,Hyderabad,Burger,Sat,1,3,3.7,484,25,UPI,,,No
+ORD10560,Bangalore,Burger,Fri,22,5,1.5,944,15,Card,,35.0,No
+ORD10225,Mumbai,South Indian,Mon,22,1,4.4,124,27,UPI,4.0,,No
+ORD10210,Hyderabad,Biryani,Sun,18,5,5.4,1427,32,UPI,4.0,15.0,No
+ORD10566,Bangalore,Biryani,Sun,0,3,3.3,1027,21,Card,5.0,40.0,No
+ORD10498,Mumbai,Chinese,Mon,20,3,1.8,596,28,UPI,5.0,,No
+ORD10307,Bangalore,Pizza,Mon,21,2,6.8,431,42,UPI,2.0,30.0,Yes
+ORD10170,Bangalore,South Indian,Fri,16,3,6.7,364,37,UPI,5.0,40.0,No
+ORD10367,Hyderabad,Biryani,Fri,16,8,3.7,2254,19,Card,5.0,,No
+ORD10355,Pune,Burger,Thu,19,4,1.2,679,20,Card,,,No
+ORD10577,Bangalore,South Indian,Sat,20,1,1.6,225,29,Card,5.0,50.0,No
+ORD10414,Delhi,Burger,Sun,23,3,10.7,557,43,UPI,4.0,20.0,Yes
+ORD10231,Pune,Chinese,Sun,14,4,4.2,950,18,UPI,4.0,15.0,No
+ORD10047,Bangalore,Chinese,Sun,20,2,1.8,453,29,Card,5.0,,No
+ORD10501,Hyderabad,Pizza,Fri,12,1,3.4,215,20,UPI,4.0,35.0,No
+ORD10241,Delhi,Pizza,Fri,13,1,5.0,252,33,UPI,5.0,15.0,No
+ORD10400,Bangalore,Burger,Fri,19,1,4.8,170,23,UPI,4.0,40.0,No
+ORD10248,Pune,South Indian,Thu,21,2,12.4,267,44,UPI,3.0,25.0,Yes
+ORD10456,Pune,Burger,Thu,18,2,5.7,400,25,UPI,5.0,40.0,No
+ORD10206,Delhi,Burger,Thu,14,1,2.5,188,12,UPI,2.0,,No
+ORD10372,Pune,Biryani,Sat,0,3,5.0,882,17,UPI,,,No
+ORD10109,Bangalore,Biryani,Fri,1,2,3.3,392,25,UPI,5.0,45.0,No
+ORD10220,Pune,South Indian,Sun,12,2,1.2,370,22,UPI,4.0,15.0,No
+ORD10291,Mumbai,Biryani,Fri,20,3,3.4,655,28,UPI,4.0,25.0,No
+ORD10002,Bangalore,Chinese,Sat,21,2,2.3,447,31,Card,5.0,,No
+ORD10329,Hyderabad,Biryani,Fri,2,2,4.5,551,21,UPI,2.0,40.0,No
+ORD10508,Pune,Pizza,Tue,18,4,2.5,981,25,Cash,,20.0,No
+ORD10569,Delhi,Chinese,Mon,14,5,2.4,942,17,UPI,5.0,,No
+ORD10553,Mumbai,South Indian,Sat,22,1,3.5,225,33,Cash,4.0,25.0,No
+ORD10404,Pune,Biryani,Fri,23,1,2.2,196,16,UPI,5.0,30.0,No
+ORD10537,Bangalore,Pizza,Fri,20,4,6.8,853,37,UPI,4.0,40.0,No
+ORD10262,Bangalore,South Indian,Sat,12,2,5.5,342,36,UPI,,30.0,No
+ORD10389,Bangalore,South Indian,Sun,17,3,1.4,404,22,UPI,3.0,50.0,No
+ORD10145,Hyderabad,South Indian,Sat,22,3,5.9,465,33,UPI,4.0,30.0,No
+ORD10441,Delhi,Chinese,Sun,19,3,2.0,640,18,UPI,3.0,25.0,No
+ORD10187,Delhi,Burger,Sun,18,2,6.5,451,29,UPI,5.0,25.0,No
+ORD10053,Mumbai,Pizza,Fri,1,1,1.1,238,12,UPI,5.0,45.0,No
+ORD10356,Delhi,South Indian,Mon,14,2,5.0,210,32,UPI,5.0,,No
+ORD10246,Pune,Biryani,Sun,19,5,3.5,1464,31,UPI,5.0,45.0,No
+ORD10041,Delhi,South Indian,Sun,22,1,5.2,195,35,Card,,20.0,No
+ORD10435,Pune,Desserts,Sun,13,1,2.2,243,29,Card,5.0,35.0,No
+ORD10576,Pune,Biryani,Wed,14,1,5.1,239,35,Cash,3.0,,No
+ORD10183,Hyderabad,Biryani,Sun,23,2,4.8,524,28,Card,,15.0,No
+ORD10493,Delhi,South Indian,Thu,13,2,6.0,262,30,Card,4.0,,No
+ORD10600,Pune,Biryani,Mon,3,1,1.4,265,8,Card,,35.0,No
+ORD10059,Pune,Biryani,Sun,20,3,6.8,797,35,Card,4.0,40.0,No
+ORD10444,Bangalore,Desserts,Sat,12,2,1.4,427,22,UPI,4.0,60.0,No
+ORD10361,Bangalore,Chinese,Sat,14,1,8.7,274,47,UPI,2.0,30.0,Yes
+ORD10050,Bangalore,Pizza,Tue,19,6,3.9,1239,38,Card,4.0,60.0,No
+ORD10313,Bangalore,Burger,Sat,23,1,3.7,279,22,UPI,5.0,,No
+ORD10138,Hyderabad,Biryani,Sat,20,8,,2354,33,UPI,4.0,25.0,No
+ORD10487,Pune,Burger,Thu,23,4,2.9,704,17,UPI,3.0,40.0,No
+ORD10276,Bangalore,South Indian,Fri,22,3,1.3,351,17,UPI,5.0,25.0,No
+ORD10396,Delhi,Burger,Sat,21,3,11.1,681,42,Cash,3.0,15.0,Yes
+ORD10130,Bangalore,Pizza,Fri,17,2,4.3,419,36,UPI,4.0,35.0,No
+ORD10215,Pune,Biryani,Mon,22,2,3.3,535,21,UPI,5.0,35.0,No
+ORD10275,Mumbai,Biryani,Fri,19,2,4.4,583,33,Card,3.0,,No
+ORD10013,Bangalore,Biryani,Sat,21,1,1.7,405,28,UPI,4.0,35.0,No
+ORD10235,Bangalore,Desserts,Mon,13,3,1.5,483,24,Card,,20.0,No
+ORD10478,Hyderabad,Chinese,Mon,20,5,4.3,903,22,UPI,,,No
+ORD10473,Pune,Biryani,Tue,0,3,6.5,817,29,Card,,20.0,No
+ORD10188,Pune,South Indian,Sun,22,2,1.5,324,28,Cash,4.0,5.0,No
+ORD10239,Mumbai,Burger,Sat,21,1,3.1,268,33,Cash,4.0,25.0,No
+ORD10418,Bangalore,Biryani,Mon,20,3,2.4,860,21,UPI,4.0,50.0,No
+ORD10348,Pune,Chinese,Tue,2,2,2.2,526,15,UPI,3.0,40.0,No
+ORD10242,Hyderabad,Biryani,Fri,14,2,4.3,510,26,Card,4.0,,No
+ORD10297,Pune,Desserts,Sun,12,5,3.3,789,20,Card,3.0,40.0,No
+ORD10572,Hyderabad,Desserts,Sat,13,2,2.0,392,13,UPI,5.0,45.0,No
+ORD10437,Delhi,Biryani,Tue,21,1,11.3,280,41,Cash,3.0,5.0,Yes
+ORD10535,Delhi,Chinese,Sun,21,1,8.5,271,48,Cash,4.0,,Yes
+ORD10578,Pune,Biryani,Fri,2,1,7.1,255,37,UPI,5.0,35.0,No
+ORD10126,Pune,Chinese,Sat,21,8,4.4,1518,21,UPI,,30.0,No
+ORD10057,Bangalore,Pizza,Sun,21,2,3.7,594,29,Card,5.0,,No
+ORD10502,Mumbai,Desserts,Sat,21,3,4.4,457,34,Card,4.0,30.0,No
+ORD10349,Pune,Desserts,Sun,12,2,7.9,459,47,UPI,3.0,,Yes
+ORD10383,Bangalore,Pizza,Fri,19,2,2.7,437,31,Cash,3.0,40.0,No
